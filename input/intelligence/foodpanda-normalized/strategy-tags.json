@@ -1,0 +1,53 @@
+[
+  {
+    "companyId": "foodpanda",
+    "tag": "grocery",
+    "sourceFactIds": [
+      "foodpanda_39c996ecf531dde2",
+      "foodpanda_b25d61186b949c88"
+    ]
+  },
+  {
+    "companyId": "foodpanda",
+    "tag": "d_side",
+    "sourceFactIds": [
+      "foodpanda_b64852aa2dfa5dc5"
+    ]
+  },
+  {
+    "companyId": "foodpanda",
+    "tag": "regional_expansion",
+    "sourceFactIds": [
+      "foodpanda_7aa0d123825e1d1b"
+    ]
+  },
+  {
+    "companyId": "foodpanda",
+    "tag": "financial",
+    "sourceFactIds": [
+      "foodpanda_17884ab9840910e6"
+    ]
+  },
+  {
+    "companyId": "foodpanda",
+    "tag": "b_side",
+    "sourceFactIds": [
+      "foodpanda_5abc67d9c6747a6c",
+      "foodpanda_73793fd021c66497"
+    ]
+  },
+  {
+    "companyId": "foodpanda",
+    "tag": "q_commerce",
+    "sourceFactIds": [
+      "foodpanda_50ea937d32909168"
+    ]
+  },
+  {
+    "companyId": "foodpanda",
+    "tag": "risk",
+    "sourceFactIds": [
+      "foodpanda_285ca8a9e14d99a5"
+    ]
+  }
+]
