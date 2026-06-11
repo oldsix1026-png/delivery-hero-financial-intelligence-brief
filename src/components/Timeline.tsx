@@ -11,8 +11,8 @@ export default function Timeline({ items }: { items: IntelligenceEvent[] }) {
               <span>{item.entityLevel === 'group' ? '集团' : item.entityLevel === 'brand' ? '品牌' : '区域'}</span>
               <b>{item.brand}</b><i>{item.region}</i><i>{item.eventType}</i>
             </div>
-            <h3>{item.title}</h3><p>{item.summary}</p>
-            <a href={item.sourceUrl} target="_blank" rel="noreferrer">{item.sourceTitle} ↗</a>
+            <h3>{item.titleZh}</h3><p>{item.summaryZh}</p>
+            <a href={item.sourceUrl} target="_blank" rel="noreferrer">{item.sourceOrganization} · {item.sourceTitle} ↗</a>
           </div>
         </article>
       ))}

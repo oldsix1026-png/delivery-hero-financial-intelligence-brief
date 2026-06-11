@@ -7,7 +7,7 @@ export default function StrategyFlywheel({ steps }: { steps: string[] }) {
           {index < steps.length - 1 && <i>→</i>}
         </div>
       ))}
-      <small>基于官方战略表述整理</small>
+      <small>基于研报与官方战略表述整理</small>
     </div>
   )
 }

@@ -12,7 +12,7 @@ export default function RegionalGmvDonutChart() {
           <Tooltip formatter={(value) => [`€${Number(value).toLocaleString()}m`, 'GMV']} />
         </PieChart>
       </ResponsiveContainer>
-      <div className="donut-center"><strong>€13.46bn</strong><span>分部 GMV 合计*</span></div>
+      <div className="donut-center"><strong>Q1 2026</strong><span>分部规模视图*</span></div>
     </div>
   )
 }

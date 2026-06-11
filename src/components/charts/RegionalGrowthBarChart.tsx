@@ -1,4 +1,4 @@
-import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { regions } from '../../data/deliveryHeroFinancialData'
 
 export default function RegionalGrowthBarChart() {
@@ -8,8 +8,10 @@ export default function RegionalGrowthBarChart() {
         <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#eadfd4" />
         <XAxis type="number" unit="%" axisLine={false} tickLine={false} />
         <YAxis type="category" dataKey="name" width={132} axisLine={false} tickLine={false} />
-        <Tooltip formatter={(value) => [`${value}% LfL`, 'GMV 同比']} />
-        <Bar dataKey="growth" radius={[0, 8, 8, 0]} barSize={24}>{regions.map((item) => <Cell key={item.name} fill={item.color} />)}</Bar>
+        <Tooltip formatter={(value, name) => [`${value}%`, name]} />
+        <Legend />
+        <Bar dataKey="reportedGrowth" name="Reported YoY" fill="#c7b7a8" radius={[0, 6, 6, 0]} barSize={11} />
+        <Bar dataKey="lflGrowth" name="LfL YoY" fill="#f47a32" radius={[0, 6, 6, 0]} barSize={11} />
       </BarChart>
     </ResponsiveContainer>
   )

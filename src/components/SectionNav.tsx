@@ -4,7 +4,7 @@ const links = [
   ['overview', '财报概览'],
   ['regions', '区域结构'],
   ['strategy', '战略引擎'],
-  ['guidance', '指引与风险'],
+  ['guidance', '盈利与指引'],
   ['intelligence', '情报追踪'],
   ['sources', '信息来源'],
 ]
