@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local research PDFs
+input/pdf/
+
+# Local research PDFs
+input/pdf/

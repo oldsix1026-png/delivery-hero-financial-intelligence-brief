@@ -1,0 +1,370 @@
+[
+  {
+    "companyId": "foodpanda",
+    "module": "financial",
+    "entityLevel": "brand",
+    "scope": "foodpanda brand",
+    "status": "未披露",
+    "note": "foodpanda 品牌未单独披露财务指标；Delivery Hero 集团或区域口径仅作为背景。",
+    "missingItem": "foodpanda 品牌独立财务指标",
+    "searchQueries": [
+      "Delivery Hero Q1 2026 foodpanda Asia",
+      "Delivery Hero revenue Asia Integrated Verticals 2026",
+      "Delivery Hero GMV Asia Quick Commerce 2026",
+      "foodpanda orders Delivery Hero order volume",
+      "Delivery Hero Adjusted EBITDA Asia 2026",
+      "foodpanda unit economics contribution margin"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "Public materials reviewed do not disclose a standalone foodpanda brand financial statement.",
+    "manualAction": "Confirm with Delivery Hero IR or management materials; do not infer from group figures.",
+    "futureImprovement": "Monitor future segment disclosures and transaction documents.",
+    "evidenceType": "missing_information",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "company_profile",
+    "missingItem": "公司画像",
+    "searchQueries": [
+      "foodpanda company profile markets"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "company_profile",
+    "missingItem": "集团结构",
+    "searchQueries": [
+      "Delivery Hero foodpanda group structure Asia"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "food_delivery",
+    "missingItem": "餐饮外卖",
+    "searchQueries": [
+      "foodpanda food delivery"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "c_side",
+    "missingItem": "C 端用户策略",
+    "searchQueries": [
+      "foodpanda Everyday App consumer strategy"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "membership",
+    "missingItem": "会员体系",
+    "searchQueries": [
+      "foodpanda pandapro membership subscription"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "promotion",
+    "missingItem": "补贴与促销",
+    "searchQueries": [
+      "foodpanda promotion voucher discount"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "merchant_tools",
+    "missingItem": "商户工具",
+    "searchQueries": [
+      "foodpanda merchant tools portal"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "advertising",
+    "missingItem": "广告与商业化",
+    "searchQueries": [
+      "foodpanda ads advertising merchant"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "fulfillment",
+    "missingItem": "履约效率",
+    "searchQueries": [
+      "foodpanda delivery fulfillment efficiency pandago"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "rider_welfare",
+    "missingItem": "骑手保障",
+    "searchQueries": [
+      "foodpanda panda hearts rider safety insurance"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "ai",
+    "missingItem": "AI",
+    "searchQueries": [
+      "foodpanda AI Delivery Hero artificial intelligence"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "ai",
+    "missingItem": "推荐、搜索和客服",
+    "searchQueries": [
+      "foodpanda recommendation search customer service AI"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "acquisition",
+    "missingItem": "并购与投资",
+    "searchQueries": [
+      "foodpanda Taiwan sale Grab acquisition"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "regulation",
+    "missingItem": "合规与监管",
+    "searchQueries": [
+      "foodpanda regulation competition authority riders"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "business_update",
+    "missingItem": "近期打法",
+    "searchQueries": [
+      "foodpanda recent strategy Everyday App pandamart XL"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "strategy",
+    "missingItem": "竞争壁垒",
+    "searchQueries": [
+      "foodpanda competitive advantages quick commerce ecosystem"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  },
+  {
+    "companyId": "foodpanda",
+    "module": "data_gap",
+    "missingItem": "数据盲区",
+    "searchQueries": [
+      "foodpanda undisclosed revenue GMV orders merchants riders"
+    ],
+    "searchedSources": [
+      "https://www.foodpanda.sg/contents/pandamart",
+      "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+      "https://ir.deliveryhero.com/",
+      "https://ir.deliveryhero.com/news"
+    ],
+    "reason": "No accepted source produced a source-backed fact for this dimension.",
+    "manualAction": "Review official site search results or add a verified manual URL.",
+    "futureImprovement": "Add an official page, PDF parser, or a reliable Tier B/C cross-check source.",
+    "evidenceType": "missing_information",
+    "status": "待补充材料",
+    "manualReviewRequired": false
+  }
+]

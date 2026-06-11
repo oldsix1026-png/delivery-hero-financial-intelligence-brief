@@ -1,0 +1,31 @@
+[
+  {
+    "id": "foodpanda_17884ab9840910e6",
+    "companyId": "foodpanda",
+    "entityLevel": "regional",
+    "scope": "foodpanda Taiwan",
+    "region": "foodpanda Taiwan",
+    "module": "financial",
+    "eventType": "business_update",
+    "sourceTitle": "Grab to Acquire Delivery Hero’s foodpanda Delivery Business in Taiwan | Grab SG",
+    "sourceUrl": "https://www.grab.com/sg/press/others/grab-to-acquire-delivery-heros-foodpanda-delivery-business-in-taiwan/",
+    "sourceTier": "B",
+    "sourceType": "partner_announcement",
+    "publishedAt": "2026-03-23T06:45:00.000Z",
+    "capturedAt": "2026-06-10T05:51:52.488Z",
+    "rawFact": "After the acquisition, Grab will have a presence across 21 cities in Taiwan. This deal combines Grab’s AI-enabled products and deep operational expertise with foodpanda’s extensive coverage across Taiwan. The foodpanda business generated approximately US$1.8 billion in Gross Merchandise Value (GMV) and is profitable on an adjusted EBITDA basis (before the allocation of Delivery Hero’s group costs) in 2025.",
+    "rawMetricName": "GMV",
+    "normalizedMetric": "GMV",
+    "rawValue": "US$1.8 billion; 2025.",
+    "normalizedValue": null,
+    "unit": "billion (source currency/metric)",
+    "currency": "USD",
+    "period": "2026-03-23",
+    "summary": "After the acquisition, Grab will have a presence across 21 cities in Taiwan. This deal combines Grab’s AI-enabled products and deep operational expertise with foodpanda’s extensive coverage across Taiwan. The foodpanda business generated approximately US$1.8 b",
+    "derivedInsight": null,
+    "manualReviewRequired": false,
+    "reviewNote": "保留来源原始指标名称和口径；未自动换算。",
+    "contentHash": "e3d5739df5514fe0aed1c55d00316e86b508ab3678a694e6998b4b490ce8b306",
+    "evidenceType": "normalized_metric"
+  }
+]
