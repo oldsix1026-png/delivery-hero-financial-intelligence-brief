@@ -32,6 +32,7 @@ import {
   eventTypeOptions,
   intelligenceEvents,
   movementSummaries,
+  quarterlyMovementSummary,
   regionOptions,
 } from './data/deliveryHeroIntelligenceData'
 import { sources } from './data/deliveryHeroSources'
@@ -91,7 +92,7 @@ export default function App() {
             <p>以近三年季度趋势为主线，将官方财务数据与 UBS、J.P. Morgan 的经营归因对应呈现，并追踪最近 90 天集团与区域品牌的重要动作。</p>
             <div className="hero__meta">
               <span>12 个季度实际值</span><span>官方披露与券商观点分层</span>
-              <span>集团、区域、品牌严格区分</span><span>情报窗口 2026-03-12 至 2026-06-12</span>
+              <span>集团、区域、品牌严格区分</span><span>情报观察期 2026Q1</span>
             </div>
           </div>
           <aside className="hero__signal">
@@ -102,7 +103,7 @@ export default function App() {
           </aside>
         </section>
 
-        <div className="official-label">财务数据截至 2026-03-31 · 情报截至 2026-06-12 · 金额默认欧元</div>
+        <div className="official-label">财务数据截至 2026-03-31 · 情报观察期 2026Q1 · 金额默认欧元</div>
         <section className="kpi-grid" aria-label="近三年核心指标趋势">
           {heroKpis.map((item) => <KpiCard key={item.label} {...item} />)}
         </section>
@@ -190,15 +191,18 @@ export default function App() {
         </section>
 
         <section className="page-section" id="intelligence">
-          <SectionHeading number="05" title="情报追踪" question="最近 90 天集团与区域品牌发生了什么？" description="先归纳主要动向，再提供可筛选的完整时间轴；每条事件保留层级、影响判断和原始来源。" />
+          <SectionHeading number="05" title="情报追踪" question="2026Q1 集团与区域品牌发生了什么？" description="观察期：2026Q1；仅收录官方披露或至少三家可信媒体独立报道的事项。" />
           <div className="movement-grid">{movementSummaries.map((item) => <MovementSummaryCard key={item.category} {...item} />)}</div>
           <div className="filters">
             <BrandFilter options={brandOptions} value={brand} onChange={setBrand} />
             <RegionFilter options={regionOptions} value={region} onChange={setRegion} />
             <EventTypeFilter options={eventTypeOptions} value={eventType} onChange={setEventType} />
           </div>
-          <SectionCard title={`完整事件时间轴 · ${filteredEvents.length} 条`} subtitle="默认按日期倒序 · 时间范围 2026-03-12 至 2026-06-12">
+          <SectionCard title={`本季度事件列表 · ${filteredEvents.length} 条`} subtitle="观察期：2026Q1 · 前台不展示具体日期">
             {filteredEvents.length > 0 ? <Timeline items={filteredEvents} /> : <p className="no-results">当前筛选组合没有可核验事件，请调整筛选条件。</p>}
+          </SectionCard>
+          <SectionCard title="2026Q1 主要动向总结" subtitle="管理层关注事项">
+            <div className="strategy-metrics">{quarterlyMovementSummary.map((item) => <StrategyMetric key={item.category} label={item.category} value="" note={item.text} />)}</div>
           </SectionCard>
         </section>
 
@@ -210,7 +214,7 @@ export default function App() {
           <div className="source-policy"><i>口径</i><p>券商观点不代表 Delivery Hero 官方结论；预测值不进入历史实际趋势；reported、CC、LfL 仅在同口径下比较；集团、区域、国家和品牌数据不相互替代。</p></div>
         </section>
       </main>
-      <footer><span>Delivery Hero财报分析与情报追踪</span><span>独立管理层简报 · 更新于 2026-06-12</span></footer>
+      <footer><span>Delivery Hero财报分析与情报追踪</span><span>情报观察期 2026Q1 · 核验于 2026-06-15</span></footer>
     </div>
   )
 }
