@@ -133,6 +133,41 @@ export const strategyMetrics = [
   { label: '商户广告 ROAS', value: '+7%', note: '新 GenAI 排序模型 · 公司披露', tone: 'red' as Tone },
 ]
 
+export const keyTermCards = [
+  {
+    term: 'Group GMV',
+    body: '集团平台交易额，反映各区域和品牌促成的订单规模；它不是收入，不能直接等同于利润或现金流。',
+  },
+  {
+    term: 'Total Segment Revenue',
+    body: 'Delivery Hero 按分部披露的收入指标，用来观察平台从 GMV 转化为收入的能力，需与 Group GMV 分开看。',
+  },
+  {
+    term: 'Quick Commerce',
+    body: '高频即时零售和快速配送，覆盖杂货、便利零售等场景，是餐饮外卖之外的新增量。',
+  },
+  {
+    term: 'Everyday App',
+    body: '把外卖、杂货、零售、订阅和广告等多场景集中在一个高频应用中，提高用户留存和跨品类消费。',
+  },
+  {
+    term: 'AdTech / Keyword Ads',
+    body: '广告和关键词投放工具，帮助商户提高曝光并让平台增加可扩展变现，不只是营销费用分类。',
+  },
+  {
+    term: 'Herogen',
+    body: 'Delivery Hero 的 AI 工程工具，重点在开发自动化和工程效率，而不是泛泛的 AI 概念。',
+  },
+  {
+    term: 'MENA / KSA / HungerStation',
+    body: 'MENA 是当前增长和利润的重要区域，KSA 与 HungerStation 的订阅、商户供给和体验策略决定区域质量。',
+  },
+  {
+    term: 'Strategic review',
+    body: '战略复盘、资产出售和债务期限管理会影响资本结构、现金流预期和估值，而不只是公司治理新闻。',
+  },
+] as const
+
 export const strategyAnalysis = [
   {
     label: '核心战略判断', evidence: 'UBS 观点' as EvidenceLabel,
@@ -185,12 +220,12 @@ export const profitabilityAnalysis = [
 ]
 
 export const risks = [
-  { title: '区域竞争与促销', level: '较高', text: '韩国和 MENA 的竞争可能改变获客成本与利润改善节奏。' },
-  { title: '韩国修复持续性', level: '观察中', text: '订单与 GMV 已恢复，但技术栈整合和优惠券强度仍需验证。' },
-  { title: 'M&A 与资产处置', level: '较高', text: '台湾交易审批、潜在战略事项和资本配置存在执行不确定性。' },
-  { title: '监管与骑手事项', level: '中等', text: '反垄断、骑手法律事项及平台监管可能带来额外现金流出。' },
-  { title: '汇率与高通胀会计', level: '中等', text: '阿根廷与土耳其使 reported、CC 和 LfL 增速出现明显差异。' },
-  { title: '治理与管理层交接', level: '观察中', text: 'CEO 交接与董事会变化需要与战略复盘进度共同观察。' },
+  { title: '韩国和 MENA 竞争会改变获客成本与利润改善节奏', level: '较高', text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销与技术成本超预期列为主要风险。' },
+  { title: '韩国修复还要看技术整合和优惠强度', level: '观察中', text: '订单与 GMV 已恢复，但 own-delivery、订阅、Quick Commerce 和全球技术栈整合仍需继续落地。' },
+  { title: '资产出售和潜在交易会影响资本结构', level: '较高', text: '台湾 foodpanda 出售审批、潜在战略事项和资本配置会影响现金流、债务期限和估值讨论。' },
+  { title: '监管与骑手事项可能带来额外现金流出', level: '中等', text: '反垄断、骑手法律事项及平台监管可能改变成本结构和区域经营节奏。' },
+  { title: '汇率和高通胀会计会放大 reported 与 LfL 差异', level: '中等', text: '阿根廷与土耳其使 reported、constant currency 和 LfL 增速出现明显差异，必须同口径比较。' },
+  { title: 'CEO 交接需要和战略复盘进度一起观察', level: '观察中', text: '管理层交接、董事会变化和战略复盘并行，可能影响资本配置和执行节奏。' },
 ]
 
 export const latestActuals = {
