@@ -8,11 +8,11 @@ const credibilityLabel = (item: IntelligenceEvent) => {
 
 export default function Timeline({ items }: { items: IntelligenceEvent[] }) {
   return (
-    <div className="timeline">
+    <div className="timeline event-card-flow">
       {items.map((item) => (
-        <article key={item.id}>
-          <div className="timeline__rail"><time>{item.eventDate}</time><span /></div>
+        <article className="event-card" key={item.id}>
           <div className="timeline__content">
+            <time>{item.eventDate}</time>
             <div className="event-meta">
               <span>{item.entityLevel === 'group' ? '集团' : item.entityLevel === 'brand' ? '品牌' : item.entityLevel === 'country' ? '国家' : '区域'}</span>
               <b>{item.brand}</b><i>{item.unifiedCategory}</i><i>{item.eventType}</i>
