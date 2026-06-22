@@ -102,6 +102,27 @@ main, footer { width: min(1320px, calc(100% - 48px)); margin-inline: auto; }
 .insight-block > div b { border-radius: 999px; background: var(--blue-soft); padding: 4px 7px; color: var(--blue); font-size: 10px; }
 .insight-block h3 { margin: 10px 0 6px; font-size: 17px; line-height: 1.4; }
 .insight-block p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.insight-block--boundary {
+  border-left: 3px solid var(--blue);
+  background: var(--blue-soft);
+}
+.insight-block--watch {
+  border-left: 3px dashed var(--orange);
+  background: #f8f3ed;
+}
+.insight-block--boundary > div span,
+.insight-block--watch > div span {
+  border-radius: 999px;
+  padding: 4px 8px;
+}
+.insight-block--boundary > div span {
+  background: #fff;
+  color: var(--blue);
+}
+.insight-block--watch > div span {
+  background: var(--orange-soft);
+  color: var(--orange-dark);
+}
 
 .difference-callout, .qc-note { display: flex; flex-wrap: wrap; align-items: baseline; gap: 9px 16px; margin-top: 8px; border-left: 3px solid var(--orange); background: #f8f3ed; padding: 14px 16px; }
 .difference-callout span, .qc-note span { color: var(--muted); font-size: 12px; }

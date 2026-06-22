@@ -82,23 +82,23 @@ export const forecastRevisions = [
 
 export const growthAnalysis = [
   {
-    label: '核心判断', evidence: '基于研报数据观察' as EvidenceLabel,
+    label: '观察结果', evidence: '基于研报数据观察' as EvidenceLabel,
     title: '业务组合变化带动收入转化改善',
     text: '近三年多数季度 Total Segment Revenue 增速高于 GMV，这是图表观察结果，不是原因。它说明平台从交易规模向收入的转化能力改善，背后原因包括 Quick Commerce、订阅、AdTech 和 own-delivery 的业务组合变化。',
   },
   {
-    label: '增长驱动', evidence: '公司披露' as EvidenceLabel,
+    label: '业务原因', evidence: '公司披露' as EvidenceLabel,
     title: 'Quick Commerce、订阅和 AdTech 提供主要解释',
     text: '公司将收入与 GMV 增速差归因于 Quick Commerce 扩张、订阅与 AdTech 动能，以及 own-delivery 持续铺开；这些业务会提高订单频次、商户服务收入和平台履约收入。',
   },
   {
-    label: '研报解读', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
+    label: '增量来源', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
     title: 'Integrated Verticals 与 LatAm 提供超预期',
     text: 'J.P. Morgan 认为 Q1 GMV 与收入分别高于一致预期约 2% 和 1%，主要正向差异来自 Integrated Verticals、LatAm 和 MENA。',
   },
   {
-    label: '边界说明', evidence: 'UBS 观点' as EvidenceLabel,
-    title: '收入转化改善仍需扣除市场投入',
+    label: '判断边界', evidence: 'UBS 观点' as EvidenceLabel,
+    title: '收入转化改善仍需看市场投入后的利润结果',
     text: 'UBS 认可韩国、MENA 和 Quick Commerce 投资回报改善，但客户获取、促销和基础设施投入具有滞后效应，收入转化改善还需要在后续利润和现金流中验证。',
   },
 ]
@@ -115,14 +115,14 @@ export const regionalAnalysis = [
     text: 'UBS 指出 HungerStation 没有简单匹配折扣，而是通过订阅、商户选择、多品类和商户出资优惠提升体验；沙特订阅用户贡献 61% GMV。',
   },
   {
-    label: '恢复观察', evidence: 'UBS 观点' as EvidenceLabel,
+    label: '后续观察', evidence: 'UBS 观点' as EvidenceLabel,
     title: '韩国恢复仍取决于订单、GMV 和技术整合',
-    text: '韩国订单和 LfL GMV 已恢复正增长，但 Baemin 订阅、own-delivery、商户工具和全球技术栈整合仍会影响利润改善速度。',
+    text: '韩国订单和 LfL GMV 已恢复正增长，但市场竞争、补贴、Baemin 订阅、own-delivery、商户工具和全球技术栈整合仍会影响利润改善速度。',
   },
   {
-    label: '风险提示', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
-    title: 'MENA 和韩国竞争会推高营销与技术投入',
-    text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销成本和技术成本超预期列为主要风险，单一市场表现不能外推为集团趋势。',
+    label: '后续观察', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
+    title: 'MENA 和韩国竞争会推高营销、补贴和技术投入',
+    text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销成本和技术成本超预期列为主要风险；这些内容属于后续观察，不能作为区域增长原因。',
   },
 ]
 
@@ -171,8 +171,8 @@ export const keyTermCards = [
 export const strategyAnalysis = [
   {
     label: '核心战略判断', evidence: 'UBS 观点' as EvidenceLabel,
-    title: 'Everyday App 连接高频场景和收入结构',
-    text: 'Everyday App 把外卖、Quick Commerce、订阅、广告和履约放在同一高频入口，目标是提高使用频次、跨品类消费、广告变现和商户服务能力；目前只能说明战略方向开始落地，还不足以证明中长期利润改善。',
+    title: 'Everyday App 把外卖、Quick Commerce、订阅和广告连接成更高频的收入结构',
+    text: 'Everyday App 是一个高频入口，把外卖、Quick Commerce、订阅、广告和履约连接起来，先提高使用频次和跨品类消费，再提升广告变现、商户服务收入和履约效率；目前只能说明战略方向开始落地，还不足以证明中长期利润改善。',
   },
   {
     label: '用户侧驱动', evidence: '公司披露' as EvidenceLabel,
@@ -186,8 +186,8 @@ export const strategyAnalysis = [
   },
   {
     label: '履约与技术', evidence: '基于研报数据观察' as EvidenceLabel,
-    title: 'own-delivery 与 AI 同时作用',
-    text: 'own-delivery 提升收入转化与体验，Herogen 和全球技术平台则改善工程交付、调度和本地化效率。',
+    title: 'own-delivery 与 Herogen 同时改善履约和工程效率',
+    text: 'own-delivery 提升收入转化与用户体验，Herogen 和全球技术平台则改善工程交付、调度和本地化效率；它们服务于经营杠杆，但仍需要后续利润和现金流验证。',
   },
 ]
 
@@ -198,31 +198,31 @@ export const flywheelSteps = [
 
 export const profitabilityAnalysis = [
   {
-    label: '盈利判断', evidence: '公司披露' as EvidenceLabel,
+    label: '公司指引', evidence: '公司披露' as EvidenceLabel,
     title: '盈利与现金流已跨过年度拐点',
     text: 'FY 2025 Adjusted EBITDA 为 €903m，同比增长 30%；FCF 为 €250m，连续第二年为正。',
   },
   {
-    label: '指引解读', evidence: 'UBS 观点' as EvidenceLabel,
-    title: '上半区间信心来自成本控制和投资回报改善',
+    label: '成本控制', evidence: 'UBS 观点' as EvidenceLabel,
+    title: '上半区间信心来自成本控制和投资回报约束',
     text: 'UBS 将 FY26 Adjusted EBITDA 预测上调至 €950m，MENA 与 Americas 上调抵消 Asia 下调；该数值是券商预测，不是公司实际值。',
   },
   {
-    label: '风险矩阵', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
-    title: '竞争、投入和交易执行影响现金流节奏',
-    text: '市场竞争、营销及技术成本、交易执行和潜在过高支付价格是研报列示风险；汇率与高通胀会计还会放大 reported 与 LfL 差异。',
+    label: '后续观察', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
+    title: '竞争、营销、技术投入和交易执行影响现金流节奏',
+    text: '市场竞争、营销及技术成本、交易执行和潜在过高支付价格是研报列示风险；汇率与高通胀会计只作为口径解释，reported 与 LfL 必须同口径比较。',
   },
   {
-    label: '资本与治理', evidence: '公司披露' as EvidenceLabel,
-    title: '债务期限、资产出售和潜在交易影响资本结构',
-    text: '台湾 foodpanda 出售仍待审批；再融资延长债务期限；Uber 持股升至 19.5%；CEO 继任搜索和战略复盘同时推进。投资者会根据现金流、债务期限、资产出售和潜在交易重新评估公司价值。',
+    label: '资本结构观察', evidence: '公司披露' as EvidenceLabel,
+    title: '债务到期管理、资产出售和潜在交易影响资本结构',
+    text: '台湾 foodpanda 出售仍待审批；再融资延长债务期限；Uber 持股升至 19.5%；CEO 继任搜索和战略复盘同时推进。投资者会根据现金流、债务期限、资产出售和潜在并购或出售交易重新评估公司价值。',
   },
 ]
 
 export const risks = [
-  { title: '韩国和 MENA 竞争会改变获客成本与利润改善节奏', level: '较高', text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销与技术成本超预期列为主要风险。' },
-  { title: '韩国修复还要看技术整合和优惠强度', level: '观察中', text: '订单与 GMV 已恢复，但 own-delivery、订阅、Quick Commerce 和全球技术栈整合仍需继续落地。' },
-  { title: '资产出售、债务期限和潜在交易会影响资本结构', level: '较高', text: '台湾 foodpanda 出售审批、再融资后的债务期限、潜在并购或出售交易和资本配置会影响现金流、估值和资本结构。' },
+  { title: '韩国和 MENA 竞争会改变获客成本与利润改善节奏', level: '较高', text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销、补贴与技术成本超预期列为主要风险。' },
+  { title: '韩国业务恢复仍取决于订单、GMV、竞争环境和技术整合', level: '观察中', text: '订单与 GMV 已恢复，但市场竞争、补贴、own-delivery、订阅、Quick Commerce、商户工具和全球技术栈整合仍需继续落地。' },
+  { title: '债务期限、资产出售和潜在交易会影响资本结构', level: '较高', text: '台湾 foodpanda 出售审批、再融资后的债务期限、潜在并购或出售交易和资本配置会影响现金流、估值和资本结构。' },
   { title: '监管与骑手事项可能带来额外现金流出', level: '中等', text: '反垄断、骑手法律事项及平台监管可能改变成本结构和区域经营节奏。' },
   { title: '汇率和高通胀会计会放大 reported 与 LfL 差异', level: '中等', text: '阿根廷与土耳其使 reported、constant currency 和 LfL 增速出现明显差异，必须同口径比较。' },
   { title: 'CEO 交接需要和战略复盘进度一起观察', level: '观察中', text: '管理层交接、董事会变化和战略复盘并行，可能影响资本配置和执行节奏。' },

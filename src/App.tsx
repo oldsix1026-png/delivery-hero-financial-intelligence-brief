@@ -156,7 +156,7 @@ export default function App() {
                 <div className="difference-callout"><span>Q1 2026 公司披露 LfL 增速差</span><strong>+9.0ppt</strong><p>Revenue 17.8% vs GMV 8.8%</p></div>
               </SectionCard>
             </div>
-            <AnalysisPanel title="增长质量归因" items={growthAnalysis} />
+            <AnalysisPanel title="收入转化改善来自业务组合变化" items={growthAnalysis} />
           </div>
           <div className="conclusion"><i>01</i><p><strong>底部总结：</strong>收入增速持续高于 GMV，说明平台从交易规模向收入的转化能力改善；背后原因包括 Quick Commerce、订阅、AdTech 和 own-delivery，而不是单一提价或单个市场拉动。</p></div>
         </section>
@@ -177,7 +177,7 @@ export default function App() {
                 <RegionalGrowthTrendChart />
               </SectionCard>
             </div>
-            <AnalysisPanel title="区域分化归因" items={regionalAnalysis} />
+            <AnalysisPanel title="区域和品类组合解释增量来源" items={regionalAnalysis} />
           </div>
           <div className="conclusion"><i>02</i><p><strong>底部总结：</strong>MENA 与 Americas 是当前增长主力，Integrated Verticals 提供更高增速；韩国订单和 GMV 已有恢复迹象，但竞争、补贴、own-delivery、订阅和技术整合仍会影响利润改善速度。</p></div>
         </section>
@@ -195,7 +195,7 @@ export default function App() {
                 <StrategyFlywheel steps={flywheelSteps} />
               </SectionCard>
             </div>
-            <AnalysisPanel title="战略能力归因" items={strategyAnalysis} />
+            <AnalysisPanel title="Everyday App 连接高频场景和收入结构" items={strategyAnalysis} />
           </div>
           <div className="conclusion"><i>03</i><p><strong>底部总结：</strong>Everyday App 的逻辑是把外卖、杂货、零售、订阅和广告放在同一高频入口，先提高使用频次和跨品类消费，再提升广告变现、商户服务和履约效率；仍需验证不同市场执行、客户获取成本、基础设施投入和复购能否改善利润。</p></div>
         </section>
@@ -217,7 +217,7 @@ export default function App() {
                 {risks.map((risk) => <article key={risk.title} className={`risk-card risk-card--${risk.level === '较高' ? 'high' : risk.level === '中等' ? 'medium' : 'watch'}`}><span>观察变量</span><h3>{risk.title}</h3><p>{risk.text}</p></article>)}
               </div>
             </div>
-            <AnalysisPanel title="盈利、指引与风险归因" items={profitabilityAnalysis} />
+            <AnalysisPanel title="后续观察集中在现金流、韩国、MENA 和资本结构" items={profitabilityAnalysis} />
           </div>
           <div className="conclusion"><i>04</i><p><strong>底部总结：</strong>盈利与现金流方向已改善，但 FY26 仍包含重点市场投入；韩国订单和 GMV 恢复、MENA 竞争、监管事项、资产出售、债务期限和潜在交易会决定改善能否持续。</p></div>
         </section>
