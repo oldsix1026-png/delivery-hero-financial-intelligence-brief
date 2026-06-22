@@ -44,11 +44,24 @@ function SectionHeading({ number, title, question, description }: {
   question: string
   description: string
 }) {
+  const isNumbered = /^\d{2}$/.test(number)
+
+  if (isNumbered) {
+    return (
+      <header className="section-heading">
+        <span className="section-number">{number}</span>
+        <h2>{title}</h2>
+        <strong className="section-subtitle">{question}</strong>
+        <p className="section-description">{description}</p>
+      </header>
+    )
+  }
+
   return (
     <header className="section-heading">
       <span>{number} · {title}</span>
       <h2>{question}</h2>
-      <p>{description}</p>
+      <p className="section-description">{description}</p>
     </header>
   )
 }
@@ -116,7 +129,7 @@ export default function App() {
         </section>
 
         <section className="page-section" id="terms">
-          <SectionHeading number="术语" title="关键术语 / 事件速读" question="先讲清这些概念，后面的增长和资本结构判断才容易理解" description="这些术语贯穿 Delivery Hero 的集团、区域、战略和风险分析；页面只解释影响本季判断的概念。" />
+          <SectionHeading number="术语" title="关键术语 / 事件速读" question="关键术语解释" description="这些术语贯穿 Delivery Hero 的集团、区域、战略和风险分析；页面聚焦影响本季判断的核心概念。" />
           <div className="term-grid">
             {keyTermCards.map((item) => <article key={item.term}><strong>{item.term}</strong><p>{item.body}</p></article>)}
           </div>
@@ -132,7 +145,7 @@ export default function App() {
         </SectionCard>
 
         <section className="page-section" id="overview">
-          <SectionHeading number="01" title="核心指标与规模趋势" question="Group GMV 仍在增长，Revenue 更快说明变现结构继续改善" description="这一部分看集团规模、收入转化和增长质量；核心结论是 Delivery Hero 仍在扩张，但收入质量比单纯 GMV 增速更值得关注。" />
+          <SectionHeading number="01" title="核心指标与规模趋势" question="Group GMV 仍在增长，Revenue 更快说明变现结构继续改善" description="本部分聚焦集团规模、收入转化和增长质量。核心结论是 Delivery Hero 仍在扩张，但收入质量比单纯 GMV 增速更值得关注。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <SectionCard title="GMV 与 Revenue 季度趋势" subtitle="近 12 个季度 · Reported actual" source="官方公开财报">
@@ -149,7 +162,7 @@ export default function App() {
         </section>
 
         <section className="page-section" id="regions">
-          <SectionHeading number="02" title="增长来源与业务结构" question="MENA 和 Americas 是增量主力，Asia/Korea 仍是修复变量" description="这一部分看区域、品牌和品类结构如何贡献增长；核心结论是增量来自多区域组合，而不是单一市场拉动。" />
+          <SectionHeading number="02" title="增长来源与业务结构" question="MENA 和 Americas 是增量主力，Asia/Korea 仍是修复变量" description="本部分聚焦区域、品牌和品类结构如何贡献增长。核心结论是增量来自多区域组合，而不是单一市场拉动。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <div className="two-column">
@@ -170,7 +183,7 @@ export default function App() {
         </section>
 
         <section className="page-section" id="strategy">
-          <SectionHeading number="03" title="盈利质量与经营杠杆" question="Everyday App 把多品类、订阅、广告和履约连接成利润增量" description="这一部分看增长如何转化为经营效率和利润质量；核心结论是 Quick Commerce、订阅、广告和履约效率正在共同改善利润弹性。" />
+          <SectionHeading number="03" title="盈利质量与经营杠杆" question="Everyday App 把多品类、订阅、广告和履约连接成利润增量" description="本部分聚焦增长如何转化为经营效率和利润质量。核心结论是 Quick Commerce、订阅、广告和履约效率正在共同改善利润弹性。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <SectionCard title="Quick Commerce 占 Group GMV 比例" subtitle="公司仅明确披露部分同季节点：Q1 2024、Q1 2025、Q1 2026" source="官方公开财报">
@@ -188,7 +201,7 @@ export default function App() {
         </section>
 
         <section className="page-section" id="guidance">
-          <SectionHeading number="04" title="指引、模型修订与后续观察" question="FY26 EBITDA 和 FCF 指引体现纪律，资本事项决定估值讨论" description="这一部分看公司指引、券商判断和风险变量；核心结论是盈利方向改善，但现金流、韩国修复、MENA 竞争和资产交易仍需持续跟踪。" />
+          <SectionHeading number="04" title="指引、模型修订与后续观察" question="FY26 EBITDA 和 FCF 指引体现纪律，资本事项决定估值讨论" description="本部分聚焦公司指引、券商判断和风险变量。核心结论是盈利方向改善，但现金流、韩国修复、MENA 竞争和资产交易仍需持续跟踪。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <SectionCard title="盈利与现金流披露趋势" subtitle="半年/全年频率 · 实际值；FY 2023 FCF 未在图中补造" source="官方公开财报">
@@ -210,23 +223,23 @@ export default function App() {
         </section>
 
         <section className="page-section" id="intelligence">
-          <SectionHeading number="05" title="情报追踪" question="2026Q1 事件主要服务多品类、区域修复、技术效率和资本事项这条线" description="观察期：2026Q1；仅收录官方披露或至少三家可信媒体独立报道的事项。" />
+          <SectionHeading number="05" title="情报追踪" question="2026Q1 事件集中在多品类、区域修复、技术效率和资本事项" description="观察期：2026Q1；仅收录官方披露或至少三家可信媒体独立报道的事项。" />
           <div className="movement-grid">{movementSummaries.map((item) => <MovementSummaryCard key={item.category} {...item} />)}</div>
           <div className="filters">
             <BrandFilter options={brandOptions} value={brand} onChange={setBrand} />
             <RegionFilter options={regionOptions} value={region} onChange={setRegion} />
             <EventTypeFilter options={eventTypeOptions} value={eventType} onChange={setEventType} />
           </div>
-          <SectionCard title={`本季度事件卡片流 · ${filteredEvents.length} 条`} subtitle="默认按日期倒序排列，保留筛选器并突出时间、板块、事件和意义">
+          <SectionCard title={`本季度情报卡片网格 · ${filteredEvents.length} 条`} subtitle="默认按日期倒序排列，保留日期、分类、标题、事件说明、影响判断和来源链接">
             {filteredEvents.length > 0 ? <Timeline items={filteredEvents} /> : <p className="no-results">当前筛选组合没有可核验事件，请调整筛选条件。</p>}
           </SectionCard>
-          <SectionCard title="2026Q1 主要动向总结" subtitle="管理层关注事项">
+          <SectionCard title="2026Q1 核心事件总结" subtitle="管理层关注事项">
             <div className="strategy-metrics">{quarterlyMovementSummary.map((item) => <StrategyMetric key={item.category} label={item.category} value="" note={item.text} />)}</div>
           </SectionCard>
         </section>
 
         <section className="page-section sources-section" id="sources">
-          <SectionHeading number="06" title="信息来源" question="数字、判断与事件如何追溯？" description="财务趋势以 Delivery Hero 官方披露为主；研报只用于归因和交叉核验；品牌事件优先使用品牌或集团官方页面。" />
+          <SectionHeading number="06" title="信息来源" question="信息来源与口径说明" description="财务趋势以 Delivery Hero 官方披露为主；研报只用于归因和交叉核验；品牌事件优先使用品牌或集团官方页面。" />
           <div className="source-grid">
             {sources.map((source) => <article key={source.id}><span>{source.type}</span><h3>{source.title}</h3><p>{source.institution}{source.publishedAt ? ` · ${source.publishedAt}` : ''}</p><p>{source.note}</p>{source.url && <a href={source.url} target="_blank" rel="noreferrer">访问来源 ↗</a>}</article>)}
           </div>
