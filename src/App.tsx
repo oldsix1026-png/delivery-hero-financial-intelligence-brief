@@ -104,12 +104,12 @@ export default function App() {
         <section className="hero">
           <div className="hero__copy">
             <span className="eyebrow">Q1 2026 · 管理层财务与情报简报</span>
-            <h1>Delivery Hero 的增长来自多品牌平台，而利润要看区域差异和资本事项</h1>
+            <h1>Delivery Hero 的增长质量取决于业务组合、区域执行和现金流验证</h1>
             <ul className="hero-bullets">
-              <li>Group GMV 与 Total Segment Revenue 继续增长，收入转化质量仍是本季主线。</li>
+              <li>Group GMV 与 Total Segment Revenue 继续增长，Revenue 增速高于 GMV 说明收入转化能力改善。</li>
               <li>Quick Commerce、Everyday App、MENA/KSA 和 AdTech 共同提供新增量。</li>
               <li>UBS 与 J.P. Morgan 更关注韩国修复、MENA 竞争和 FY26 EBITDA/FCF 指引。</li>
-              <li>资产处置和债务期限管理会继续影响资本结构与估值讨论。</li>
+              <li>资产处置、债务期限管理和潜在交易会继续影响现金流、估值和资本结构。</li>
             </ul>
             <div className="hero__meta">
               <span>12 个季度实际值</span><span>官方披露与券商观点分层</span>
@@ -120,9 +120,9 @@ export default function App() {
             <span>核心判断</span>
             <strong>增长质量正在改善，但投资者会继续检验现金流和资本结构</strong>
             <ul className="hero-bullets hero-bullets--dark">
-              <li>Revenue 增速持续快于 GMV，说明变现结构仍在改善。</li>
+              <li>Revenue 增速持续快于 GMV 是观察结果，背后需要看 Quick Commerce、订阅、AdTech 和 own-delivery 的实际贡献。</li>
               <li>MENA、Americas 与 Integrated Verticals 是当前主要增量来源。</li>
-              <li>Asia/Korea 修复、战略复盘和债务期限管理决定后续估值弹性。</li>
+              <li>韩国订单和 GMV 恢复、战略复盘、资产出售和债务期限管理决定后续估值弹性。</li>
             </ul>
             <a href="#overview">查看集团增长质量 →</a>
           </aside>
@@ -145,7 +145,7 @@ export default function App() {
         </SectionCard>
 
         <section className="page-section" id="overview">
-          <SectionHeading number="01" title="核心指标与规模趋势" question="Group GMV 仍在增长，Revenue 更快说明变现结构继续改善" description="本部分聚焦集团规模、收入转化和增长质量。核心结论是 Delivery Hero 仍在扩张，但收入质量比单纯 GMV 增速更值得关注。" />
+          <SectionHeading number="01" title="核心指标与规模趋势" question="业务组合变化带动收入增速高于 GMV" description="本部分聚焦集团规模、收入转化和增长质量。核心结论是 Delivery Hero 仍在扩张，Revenue 增速高于 GMV 是观察结果，原因要看 Quick Commerce、订阅、AdTech 和 own-delivery 的业务组合变化。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <SectionCard title="GMV 与 Revenue 季度趋势" subtitle="近 12 个季度 · Reported actual" source="官方公开财报">
@@ -158,11 +158,11 @@ export default function App() {
             </div>
             <AnalysisPanel title="增长质量归因" items={growthAnalysis} />
           </div>
-          <div className="conclusion"><i>01</i><p><strong>底部总结：</strong>收入快于 GMV 并非单一提价结果，公司披露的主要驱动是 Quick Commerce、订阅、AdTech 和 own-delivery；券商认为区域结构与 Integrated Verticals 的超预期也在放大差异。</p></div>
+          <div className="conclusion"><i>01</i><p><strong>底部总结：</strong>收入增速持续高于 GMV，说明平台从交易规模向收入的转化能力改善；背后原因包括 Quick Commerce、订阅、AdTech 和 own-delivery，而不是单一提价或单个市场拉动。</p></div>
         </section>
 
         <section className="page-section" id="regions">
-          <SectionHeading number="02" title="增长来源与业务结构" question="MENA 和 Americas 是增量主力，Asia/Korea 仍是修复变量" description="本部分聚焦区域、品牌和品类结构如何贡献增长。核心结论是增量来自多区域组合，而不是单一市场拉动。" />
+          <SectionHeading number="02" title="增长来源与业务结构" question="MENA 和 Americas 是增量主力，韩国恢复仍取决于订单、GMV 和技术整合" description="本部分聚焦区域、品牌和品类结构如何贡献增长。核心结论是增量来自多区域组合，而不是单一市场拉动；韩国业务恢复还要继续看订单、GMV、订阅、own-delivery、商户工具和技术整合效果。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <div className="two-column">
@@ -179,11 +179,11 @@ export default function App() {
             </div>
             <AnalysisPanel title="区域分化归因" items={regionalAnalysis} />
           </div>
-          <div className="conclusion"><i>02</i><p><strong>底部总结：</strong>MENA 与 Americas 是当前增长主力，Integrated Verticals 提供更高增速；Asia 已出现修复，但 reported 数值仍受范围、汇率和高通胀会计影响。</p></div>
+          <div className="conclusion"><i>02</i><p><strong>底部总结：</strong>MENA 与 Americas 是当前增长主力，Integrated Verticals 提供更高增速；韩国订单和 GMV 已有恢复迹象，但竞争、补贴、own-delivery、订阅和技术整合仍会影响利润改善速度。</p></div>
         </section>
 
         <section className="page-section" id="strategy">
-          <SectionHeading number="03" title="盈利质量与经营杠杆" question="Everyday App 把多品类、订阅、广告和履约连接成利润增量" description="本部分聚焦增长如何转化为经营效率和利润质量。核心结论是 Quick Commerce、订阅、广告和履约效率正在共同改善利润弹性。" />
+          <SectionHeading number="03" title="盈利质量与经营杠杆" question="Everyday App 把外卖、Quick Commerce、订阅和广告连接成更高频的收入结构" description="本部分聚焦增长如何转化为经营效率和利润质量。核心结论是 Everyday App 通过多品类入口提高使用频次和跨品类消费，再通过广告、商户服务和履约效率改善收入转化。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <SectionCard title="Quick Commerce 占 Group GMV 比例" subtitle="公司仅明确披露部分同季节点：Q1 2024、Q1 2025、Q1 2026" source="官方公开财报">
@@ -197,11 +197,11 @@ export default function App() {
             </div>
             <AnalysisPanel title="战略能力归因" items={strategyAnalysis} />
           </div>
-          <div className="conclusion"><i>03</i><p><strong>底部总结：</strong>Quick Commerce 扩大使用场景，订阅增强留存，AdTech 提高商户价值，own-delivery 与 AI 改善履约和开发效率；这些能力共同支撑收入转化与盈利改善。</p></div>
+          <div className="conclusion"><i>03</i><p><strong>底部总结：</strong>Everyday App 的逻辑是把外卖、杂货、零售、订阅和广告放在同一高频入口，先提高使用频次和跨品类消费，再提升广告变现、商户服务和履约效率；仍需验证不同市场执行、客户获取成本、基础设施投入和复购能否改善利润。</p></div>
         </section>
 
         <section className="page-section" id="guidance">
-          <SectionHeading number="04" title="指引、模型修订与后续观察" question="FY26 EBITDA 和 FCF 指引体现纪律，资本事项决定估值讨论" description="本部分聚焦公司指引、券商判断和风险变量。核心结论是盈利方向改善，但现金流、韩国修复、MENA 竞争和资产交易仍需持续跟踪。" />
+          <SectionHeading number="04" title="后续观察" question="FY26 EBITDA 和 FCF 仍要看成本控制、现金流管理和资本结构变化" description="本部分聚焦公司指引、券商判断和风险变量。核心结论是盈利方向改善，但现金流、韩国订单和 GMV 恢复、MENA 竞争、资产出售、债务期限和潜在交易仍需持续跟踪。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <SectionCard title="盈利与现金流披露趋势" subtitle="半年/全年频率 · 实际值；FY 2023 FCF 未在图中补造" source="官方公开财报">
@@ -219,11 +219,11 @@ export default function App() {
             </div>
             <AnalysisPanel title="盈利、指引与风险归因" items={profitabilityAnalysis} />
           </div>
-          <div className="conclusion"><i>04</i><p><strong>底部总结：</strong>盈利与现金流方向已改善，但 FY26 仍包含重点市场投入；韩国修复、MENA 竞争、监管事项、汇率及资本交易决定改善能否持续。</p></div>
+          <div className="conclusion"><i>04</i><p><strong>底部总结：</strong>盈利与现金流方向已改善，但 FY26 仍包含重点市场投入；韩国订单和 GMV 恢复、MENA 竞争、监管事项、资产出售、债务期限和潜在交易会决定改善能否持续。</p></div>
         </section>
 
         <section className="page-section" id="intelligence">
-          <SectionHeading number="05" title="情报追踪" question="2026Q1 事件集中在多品类、区域修复、技术效率和资本事项" description="观察期：2026Q1；仅收录官方披露或至少三家可信媒体独立报道的事项。" />
+          <SectionHeading number="05" title="情报追踪" question="2026Q1 事件集中在多品类、区域恢复、技术效率和资本结构变化" description="观察期：2026Q1；仅收录官方披露或至少三家可信媒体独立报道的事项。" />
           <div className="movement-grid">{movementSummaries.map((item) => <MovementSummaryCard key={item.category} {...item} />)}</div>
           <div className="filters">
             <BrandFilter options={brandOptions} value={brand} onChange={setBrand} />
@@ -243,7 +243,7 @@ export default function App() {
           <div className="source-grid">
             {sources.map((source) => <article key={source.id}><span>{source.type}</span><h3>{source.title}</h3><p>{source.institution}{source.publishedAt ? ` · ${source.publishedAt}` : ''}</p><p>{source.note}</p>{source.url && <a href={source.url} target="_blank" rel="noreferrer">访问来源 ↗</a>}</article>)}
           </div>
-          <div className="source-policy"><i>口径</i><p>公司披露用于确认实际数据和指引，UBS 与 J.P. Morgan 用于解释区域差异、投资回报、模型修订和风险；预测值不进入历史实际趋势，reported、CC、LfL 仅在同口径下比较。</p></div>
+          <div className="source-policy"><i>口径</i><p>公司披露用于确认实际数据和指引，UBS 与 J.P. Morgan 用于解释区域差异、投资回报、模型修订和风险；预测值不进入历史实际趋势，reported、constant currency 和 like-for-like 仅在同口径下比较。</p></div>
         </section>
       </main>
       <footer><span>Delivery Hero财报分析与情报追踪</span><span>情报观察期 2026Q1 · 核验于 2026-06-15</span></footer>
