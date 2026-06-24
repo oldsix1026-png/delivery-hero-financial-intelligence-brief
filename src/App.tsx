@@ -162,7 +162,7 @@ export default function App() {
         </section>
 
         <section className="page-section" id="regions">
-          <SectionHeading number="02" title="增长来源与业务结构" question="MENA 和 Americas 是增量主力，韩国恢复仍取决于订单、GMV 和技术整合" description="本部分聚焦区域、品牌和品类结构如何贡献增长。核心结论是增量来自多区域组合，而不是单一市场拉动；韩国业务恢复还要继续看订单、GMV、订阅、own-delivery、商户工具和技术整合效果。" />
+          <SectionHeading number="02" title="增长来源与业务结构" question="MENA 和 Americas 是增量主力，韩国业务恢复仍取决于订单、GMV 和技术整合" description="本部分聚焦区域、品牌和品类结构如何贡献增长。核心结论是增量来自多区域组合，而不是单一市场拉动；韩国业务恢复还要继续看订单、GMV、订阅、own-delivery、商户工具和技术整合效果。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <div className="two-column">

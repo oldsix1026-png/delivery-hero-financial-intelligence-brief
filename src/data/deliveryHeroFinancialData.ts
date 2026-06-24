@@ -88,12 +88,12 @@ export const growthAnalysis = [
   },
   {
     label: '业务原因', evidence: '公司披露' as EvidenceLabel,
-    title: 'Quick Commerce、订阅和 AdTech 提供主要解释',
+    title: 'Quick Commerce、订阅和 AdTech 解释收入与 GMV 增速差异',
     text: '公司将收入与 GMV 增速差归因于 Quick Commerce 扩张、订阅与 AdTech 动能，以及 own-delivery 持续铺开；这些业务会提高订单频次、商户服务收入和平台履约收入。',
   },
   {
     label: '增量来源', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
-    title: 'Integrated Verticals 与 LatAm 提供超预期',
+    title: 'Integrated Verticals 与 LatAm 表现超出预期',
     text: 'J.P. Morgan 认为 Q1 GMV 与收入分别高于一致预期约 2% 和 1%，主要正向差异来自 Integrated Verticals、LatAm 和 MENA。',
   },
   {
@@ -116,13 +116,13 @@ export const regionalAnalysis = [
   },
   {
     label: '后续观察', evidence: 'UBS 观点' as EvidenceLabel,
-    title: '韩国恢复仍取决于订单、GMV 和技术整合',
+    title: '韩国业务恢复仍取决于订单、GMV 和技术整合',
     text: '韩国订单和 LfL GMV 已恢复正增长，但市场竞争、补贴、Baemin 订阅、own-delivery、商户工具和全球技术栈整合仍会影响利润改善速度。',
   },
   {
     label: '后续观察', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
     title: 'MENA 和韩国竞争会推高营销、补贴和技术投入',
-    text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销成本和技术成本超预期列为主要风险；这些内容属于后续观察，不能作为区域增长原因。',
+    text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销成本和技术成本超出预期列为主要风险；这些内容属于后续观察，应作为后续风险变量跟踪。',
   },
 ]
 
@@ -204,7 +204,7 @@ export const profitabilityAnalysis = [
   },
   {
     label: '成本控制', evidence: 'UBS 观点' as EvidenceLabel,
-    title: '上半区间信心来自成本控制和投资回报约束',
+    title: 'FY26 EBITDA 预测上调来自成本控制和投资回报约束',
     text: 'UBS 将 FY26 Adjusted EBITDA 预测上调至 €950m，MENA 与 Americas 上调抵消 Asia 下调；该数值是券商预测，不是公司实际值。',
   },
   {
@@ -220,7 +220,7 @@ export const profitabilityAnalysis = [
 ]
 
 export const risks = [
-  { title: '韩国和 MENA 竞争会改变获客成本与利润改善节奏', level: '较高', text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销、补贴与技术成本超预期列为主要风险。' },
+  { title: '韩国和 MENA 竞争会改变获客成本与利润改善节奏', level: '较高', text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销、补贴与技术成本超出预期列为主要风险。' },
   { title: '韩国业务恢复仍取决于订单、GMV、竞争环境和技术整合', level: '观察中', text: '订单与 GMV 已恢复，但市场竞争、补贴、own-delivery、订阅、Quick Commerce、商户工具和全球技术栈整合仍需继续落地。' },
   { title: '债务期限、资产出售和潜在交易会影响资本结构', level: '较高', text: '台湾 foodpanda 出售审批、再融资后的债务期限、潜在并购或出售交易和资本配置会影响现金流、估值和资本结构。' },
   { title: '监管与骑手事项可能带来额外现金流出', level: '中等', text: '反垄断、骑手法律事项及平台监管可能改变成本结构和区域经营节奏。' },

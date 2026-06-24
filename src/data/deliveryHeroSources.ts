@@ -17,7 +17,7 @@ export const sources: SourceItem[] = [
   {
     id: 'jpm-report', title: 'A solid Q126, business on track while all eyes are on M&A scenarios', institution: 'J.P. Morgan Europe Equity Research',
     publishedAt: '2026-04-30', type: '券商研报',
-    note: '用于实际值与一致预期比较、区域超预期来源、成本竞争风险和 M&A 讨论。',
+    note: '用于实际值与一致预期比较、区域表现超出预期来源、成本竞争风险和 M&A 讨论。',
   },
   {
     id: 'dh-reports', title: 'Financial Reports and Presentations', institution: 'Delivery Hero Investor Relations',
