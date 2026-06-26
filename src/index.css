@@ -158,6 +158,9 @@ main, footer { width: min(1320px, calc(100% - 48px)); margin-inline: auto; }
 .compact-metric span { color: var(--muted); font-size: 11px; font-weight: 850; }
 .compact-metric strong { color: var(--orange-dark); font-size: 26px; }
 .compact-metric p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.everyday-strategy-note { display: grid; gap: 8px; margin-top: 14px; border: 1px solid var(--border); border-left: 4px solid var(--orange); border-radius: 16px; background: #fffaf5; padding: 17px 18px; }
+.everyday-strategy-note h4 { margin: 0; color: var(--text); font-size: 17px; line-height: 1.35; }
+.everyday-strategy-note p { margin: 0; color: var(--muted); line-height: 1.72; }
 .flywheel { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; }
 .flywheel__step { position: relative; display: grid; min-height: 108px; align-content: center; gap: 7px; border-radius: 17px; background: linear-gradient(135deg,#fff4e9,#fffdf9); padding: 17px; }
 .flywheel__step span { color: var(--orange-dark); font-size: 11px; font-weight: 900; }

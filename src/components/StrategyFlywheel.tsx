@@ -1,6 +1,6 @@
 export default function StrategyFlywheel({ steps }: { steps: string[] }) {
   return (
-    <div className="flywheel" aria-label="Everyday App 战略飞轮">
+    <div className="flywheel" aria-label="Everyday App 战略思路流程">
       {steps.map((step, index) => (
         <div className="flywheel__step" key={step}>
           <span>{String(index + 1).padStart(2, '0')}</span><strong>{step}</strong>

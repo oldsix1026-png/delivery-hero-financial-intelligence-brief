@@ -151,10 +151,6 @@ export const keyTermCards = [
     body: 'Delivery Hero 将应用从单一餐饮外卖入口扩展为覆盖更多日常消费场景的平台，包括餐饮、Quick Commerce、杂货零售、订阅、广告和商户服务等。',
   },
   {
-    term: '战略飞轮',
-    body: '更多品类带来更多使用场景，更多使用场景提高用户打开频率和订单频次，再带动会员、广告、商户服务和履约效率改善，最终推动收入转化和利润改善。',
-  },
-  {
     term: 'AdTech / Keyword Ads',
     body: '广告和关键词投放工具，帮助商户提高曝光并让平台增加可扩展变现，不只是营销费用分类。',
   },
@@ -176,7 +172,7 @@ export const strategyAnalysis = [
   {
     label: '核心战略判断', evidence: 'UBS 观点' as EvidenceLabel,
     title: 'Everyday App 把外卖、Quick Commerce、订阅和广告连接成更高频的收入结构',
-    text: 'Everyday App 是覆盖餐饮、Quick Commerce、杂货零售、订阅、广告和商户服务的高频入口；战略飞轮来自更多品类、更多使用场景、更高订单频次、会员和广告变现以及履约效率改善。',
+    text: 'Everyday App 是覆盖餐饮、Quick Commerce、杂货零售、订阅、广告和商户服务的高频入口；增长路径来自更多品类、更多使用场景、更高订单频次、会员和广告变现以及履约效率改善。',
   },
   {
     label: '用户侧驱动', evidence: '公司披露' as EvidenceLabel,

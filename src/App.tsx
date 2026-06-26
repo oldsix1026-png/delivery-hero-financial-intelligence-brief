@@ -172,11 +172,14 @@ export default function App() {
               <SectionCard title="Everyday App 将餐饮、Quick Commerce 和广告连接成高频入口" subtitle="先解释战略含义，再呈现 GMV、用户和收入代理指标" source="财报 + 券商研报">
                 <div className="everyday-intro">
                   <p><strong>Everyday App</strong> 指 Delivery Hero 将应用从单一餐饮外卖入口扩展为覆盖更多日常消费场景的平台，包括餐饮、Quick Commerce、杂货零售、订阅、广告和商户服务等。</p>
-                  <p><strong>战略飞轮</strong> 指更多品类带来更多使用场景，更多使用场景提高用户打开频率和订单频次，订单频次提升后带动会员、广告、商户服务和履约效率改善，最终推动收入转化和利润改善。</p>
                 </div>
                 <QuickCommerceTrendChart />
                 <div className="qc-note"><strong>FY 2025 Quick Commerce GMV 超过 €7.5bn</strong><span>Q1 2026 同比 +30% LfL，占 Group GMV 18%</span></div>
                 <div className="strategy-metrics">{strategyMetrics.map((item) => <StrategyMetric key={item.label} {...item} />)}</div>
+                <div className="everyday-strategy-note">
+                  <h4>Everyday App 的战略思路</h4>
+                  <p>Delivery Hero 将 Everyday App 从单一餐饮外卖入口扩展为覆盖更多日常消费场景的平台。更多品类带来更多使用场景，使用场景增加后提升用户打开频率和订单频次，并进一步带动会员留存、广告收入、商户服务和履约效率改善，最终推动收入转化和利润改善。</p>
+                </div>
                 <StrategyFlywheel steps={flywheelSteps} />
               </SectionCard>
             </div>
