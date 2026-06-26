@@ -82,9 +82,9 @@ export const forecastRevisions = [
 
 export const growthAnalysis = [
   {
-    label: '观察结果', evidence: '基于研报数据观察' as EvidenceLabel,
+    label: '数据表现', evidence: '基于研报数据观察' as EvidenceLabel,
     title: '业务组合变化带动收入转化改善',
-    text: '近三年多数季度 Total Segment Revenue 增速高于 GMV，这是图表观察结果，不是原因。它说明平台从交易规模向收入的转化能力改善，背后原因包括 Quick Commerce、订阅、AdTech 和 own-delivery 的业务组合变化。',
+    text: '近三年多数季度 Total Segment Revenue 增速高于 GMV，平台从交易规模向收入的转化能力改善；背后原因包括 Quick Commerce、订阅、AdTech 和 own-delivery 的业务组合变化。',
   },
   {
     label: '业务原因', evidence: '公司披露' as EvidenceLabel,
@@ -97,9 +97,9 @@ export const growthAnalysis = [
     text: 'J.P. Morgan 认为 Q1 GMV 与收入分别高于一致预期约 2% 和 1%，主要正向差异来自 Integrated Verticals、LatAm 和 MENA。',
   },
   {
-    label: '利润验证', evidence: 'UBS 观点' as EvidenceLabel,
-    title: '收入转化改善需要利润和现金流兑现',
-    text: 'UBS 认可韩国、MENA 和 Quick Commerce 投资回报改善，但客户获取、促销和基础设施投入具有滞后效应，后续利润和现金流决定收入转化改善的兑现程度。',
+    label: '利润表现', evidence: 'UBS 观点' as EvidenceLabel,
+    title: '韩国、MENA 和 Quick Commerce 投资回报改善',
+    text: 'UBS 认可韩国、MENA 和 Quick Commerce 投资回报改善，同时提示客户获取、促销和基础设施投入具有滞后效应，利润和现金流会反映收入转化改善的兑现程度。',
   },
 ]
 
@@ -115,12 +115,12 @@ export const regionalAnalysis = [
     text: 'UBS 指出 HungerStation 没有简单匹配折扣，而是通过订阅、商户选择、多品类和商户出资优惠提升体验；沙特订阅用户贡献 61% GMV。',
   },
   {
-    label: '风险变量', evidence: 'UBS 观点' as EvidenceLabel,
-    title: '韩国业务恢复仍取决于订单、GMV 和技术整合',
-    text: '韩国订单和 LfL GMV 已恢复正增长，但市场竞争、补贴、Baemin 订阅、own-delivery、商户工具和全球技术栈整合仍会影响利润改善速度。',
+    label: '区域进展', evidence: 'UBS 观点' as EvidenceLabel,
+    title: '韩国订单和 LfL GMV 恢复正增长',
+    text: '韩国订单和 LfL GMV 已恢复正增长；市场竞争、补贴、Baemin 订阅、own-delivery、商户工具和全球技术栈整合会影响利润改善速度。',
   },
   {
-    label: '风险变量', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
+    label: '成本压力', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
     title: 'MENA 和韩国竞争会推高营销、补贴和技术投入',
     text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销成本和技术成本超出预期列为主要风险；这些费用项会影响区域利润改善速度。',
   },
@@ -140,7 +140,7 @@ export const keyTermCards = [
   },
   {
     term: 'Total Segment Revenue',
-    body: 'Delivery Hero 按分部披露的收入指标，用来观察平台从 GMV 转化为收入的能力，需与 Group GMV 分开看。',
+    body: 'Delivery Hero 按分部披露的收入指标，反映平台从 GMV 转化为收入的能力，与 Group GMV 属于不同财务口径。',
   },
   {
     term: 'Quick Commerce',
@@ -172,7 +172,7 @@ export const strategyAnalysis = [
   {
     label: '核心战略判断', evidence: 'UBS 观点' as EvidenceLabel,
     title: 'Everyday App 把外卖、Quick Commerce、订阅和广告连接成更高频的收入结构',
-    text: 'Everyday App 是一个高频入口，把外卖、Quick Commerce、订阅、广告和履约连接起来，先提高使用频次和跨品类消费，再提升广告变现、商户服务收入和履约效率；中长期利润改善仍取决于市场执行、获客成本和复购。',
+    text: 'Everyday App 是一个高频入口，把外卖、Quick Commerce、订阅、广告和履约连接起来，先提高使用频次和跨品类消费，再提升广告变现、商户服务收入和履约效率；市场执行、获客成本和复购会影响中长期利润改善。',
   },
   {
     label: '用户侧驱动', evidence: '公司披露' as EvidenceLabel,
@@ -187,7 +187,7 @@ export const strategyAnalysis = [
   {
     label: '履约与技术', evidence: '基于研报数据观察' as EvidenceLabel,
     title: 'own-delivery 与 Herogen 同时改善履约和工程效率',
-    text: 'own-delivery 提升收入转化与用户体验，Herogen 和全球技术平台则改善工程交付、调度和本地化效率；经营杠杆能否扩大取决于后续利润和现金流兑现。',
+    text: 'own-delivery 提升收入转化与用户体验，Herogen 和全球技术平台则改善工程交付、调度和本地化效率；后续利润和现金流会体现经营杠杆扩大程度。',
   },
 ]
 
@@ -208,7 +208,7 @@ export const profitabilityAnalysis = [
     text: 'UBS 将 FY26 Adjusted EBITDA 预测上调至 €950m，MENA 与 Americas 上调抵消 Asia 下调；该数值是券商预测，不是公司实际值。',
   },
   {
-    label: '风险变量', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
+    label: '成本压力', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
     title: '竞争、营销、技术投入和交易执行影响现金流节奏',
     text: '市场竞争、营销及技术成本、交易执行和潜在过高支付价格是研报列示风险；汇率与高通胀会计只作为口径解释，reported 与 LfL 必须同口径比较。',
   },
@@ -221,7 +221,7 @@ export const profitabilityAnalysis = [
 
 export const risks = [
   { title: '韩国和 MENA 竞争会改变获客成本与利润改善节奏', level: '较高', text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销、补贴与技术成本超出预期列为主要风险。' },
-  { title: '韩国业务恢复仍取决于订单、GMV、竞争环境和技术整合', level: '观察中', text: '订单与 GMV 已恢复，但市场竞争、补贴、own-delivery、订阅、Quick Commerce、商户工具和全球技术栈整合仍需继续落地。' },
+  { title: '韩国订单和 GMV 恢复，竞争环境和技术整合影响利润速度', level: '观察中', text: '订单与 GMV 已恢复，市场竞争、补贴、own-delivery、订阅、Quick Commerce、商户工具和全球技术栈整合会影响利润改善速度。' },
   { title: '债务期限、资产出售和潜在交易会影响资本结构', level: '较高', text: '台湾 foodpanda 出售审批、再融资后的债务期限、潜在并购或出售交易和资本配置会影响现金流、估值和资本结构。' },
   { title: '监管与骑手事项可能带来额外现金流出', level: '中等', text: '反垄断、骑手法律事项及平台监管可能改变成本结构和区域经营节奏。' },
   { title: '汇率和高通胀会计会放大 reported 与 LfL 差异', level: '中等', text: '阿根廷与土耳其使 reported、constant currency 和 LfL 增速出现明显差异，必须同口径比较。' },

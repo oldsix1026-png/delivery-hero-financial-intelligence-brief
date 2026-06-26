@@ -4,7 +4,7 @@ export type SourceItem = {
   institution: string
   publishedAt?: string
   url?: string
-  type: '券商研报' | '官方财报' | '官方页面'
+  type: '券商研报' | '官方财报' | '官方页面' | '媒体报道'
   note: string
 }
 
@@ -39,7 +39,19 @@ export const sources: SourceItem[] = [
   {
     id: 'dh-news', title: 'Delivery Hero IR News', institution: 'Delivery Hero Investor Relations',
     url: 'https://ir.deliveryhero.com/news', type: '官方页面',
-    note: '治理、资本市场、潜在交易和法定披露入口。',
+    note: '治理、资本市场、潜在交易、股权结构和法定披露入口。',
+  },
+  {
+    id: 'ft-aspex', title: 'Top Delivery Hero investor threatens to seek leadership change', institution: 'Financial Times',
+    publishedAt: '2026-03-13',
+    url: 'https://www.ft.com/content/e907b84c-8b49-4e00-82ce-48f14242b61a',
+    type: '媒体报道', note: '用于核实 Aspex 对资产出售、治理调整和战略复盘的股东压力。',
+  },
+  {
+    id: 'wsj-uber-approach', title: 'Uber’s $11.6 Billion Takeover Approach Lifts Delivery Hero Shares', institution: 'Wall Street Journal',
+    publishedAt: '2026-05-25',
+    url: 'https://www.wsj.com/business/hospitality/ubers-11-6-billion-takeover-approach-lifts-delivery-hero-shares-ca3f8d01',
+    type: '媒体报道', note: '用于交叉核实 Uber 潜在要约的资本市场背景；前台要约价格以 Delivery Hero 官方公告为准。',
   },
   {
     id: 'dh-newsroom', title: 'Delivery Hero Newsroom', institution: 'Delivery Hero',
