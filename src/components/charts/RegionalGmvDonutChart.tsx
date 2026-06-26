@@ -13,6 +13,9 @@ export default function RegionalGmvDonutChart() {
         </PieChart>
       </ResponsiveContainer>
       <div className="donut-center"><strong>Q1 2026</strong><span>分部规模视图*</span></div>
+      <div className="donut-legend" aria-label="Q1 2026 区域 GMV 构成图例">
+        {regions.map((item) => <span key={item.name}><i style={{ backgroundColor: item.color }} />{item.name}</span>)}
+      </div>
     </div>
   )
 }

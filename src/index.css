@@ -128,6 +128,15 @@ main, footer { width: min(1320px, calc(100% - 48px)); margin-inline: auto; }
 .difference-callout span, .qc-note span { color: var(--muted); font-size: 12px; }
 .difference-callout strong, .qc-note strong { color: var(--orange-dark); font-size: 20px; }
 .difference-callout p { margin: 0; color: var(--muted); font-size: 12px; }
+.merged-growth-card { display: grid; gap: 12px; }
+.growth-quality-strip { border-top: 1px solid var(--line); padding-top: 8px; }
+.everyday-intro { display: grid; gap: 10px; margin-bottom: 14px; }
+.everyday-intro p { margin: 0; color: var(--text); line-height: 1.7; }
+.profit-point-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.profit-point-grid article { border: 1px solid var(--line); background: #fffaf5; padding: 14px; border-radius: 8px; }
+.profit-point-grid span { display: block; color: var(--muted); font-size: 12px; }
+.profit-point-grid strong { display: block; margin: 6px 0; font-size: 22px; color: var(--orange-dark); }
+.profit-point-grid p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .conclusion, .source-policy { display: flex; align-items: flex-start; gap: 12px; margin-top: 18px; border-radius: 17px; background: #322c27; padding: 19px 21px; color: #fff; }
 .conclusion > i, .source-policy > i { flex: 0 0 auto; color: #ffae70; font-style: normal; font-weight: 900; }
 .conclusion p, .source-policy p { margin: 0; color: #e2d9d1; line-height: 1.7; }
@@ -137,6 +146,9 @@ main, footer { width: min(1320px, calc(100% - 48px)); margin-inline: auto; }
 .donut-center { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; pointer-events: none; }
 .donut-center strong { font-size: 25px; }
 .donut-center span { color: var(--muted); font-size: 11px; }
+.donut-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 14px; margin-top: -4px; }
+.donut-legend span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12px; }
+.donut-legend i { width: 10px; height: 10px; border-radius: 999px; flex: 0 0 auto; }
 .legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .legend span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12px; }
 .legend i { width: 9px; height: 9px; border-radius: 999px; }
@@ -247,7 +259,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
 }
 
 @media (max-width: 580px) {
-  .kpi-grid, .term-grid, .movement-grid, .strategy-metrics, .filters, .risk-matrix, .source-grid, .guidance-summary { grid-template-columns: 1fr; }
+  .kpi-grid, .term-grid, .movement-grid, .strategy-metrics, .filters, .risk-matrix, .source-grid, .guidance-summary, .profit-point-grid { grid-template-columns: 1fr; }
   .filter-group { grid-column: auto; }
   .page-section { padding-top: 72px; }
   .hero h1 { font-size: 38px; }
