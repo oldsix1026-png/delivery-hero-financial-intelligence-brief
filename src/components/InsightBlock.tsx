@@ -8,7 +8,7 @@ export default function InsightBlock({ label, evidence, title, text }: {
 }) {
   const modifier = label.includes('判断边界')
     ? ' insight-block--boundary'
-    : label.includes('后续观察') || label.includes('风险提示') || label.includes('资本结构')
+    : label.includes('风险变量') || label.includes('风险提示') || label.includes('资本结构')
       ? ' insight-block--watch'
       : ''
 

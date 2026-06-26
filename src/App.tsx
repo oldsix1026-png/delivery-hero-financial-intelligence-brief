@@ -3,7 +3,6 @@ import AnalysisPanel from './components/AnalysisPanel'
 import BrandFilter from './components/BrandFilter'
 import EventTypeFilter from './components/EventTypeFilter'
 import KpiCard from './components/KpiCard'
-import MovementSummaryCard from './components/MovementSummaryCard'
 import RegionFilter from './components/RegionFilter'
 import SectionNav from './components/SectionNav'
 import StrategyFlywheel from './components/StrategyFlywheel'
@@ -32,8 +31,6 @@ import {
   brandOptions,
   eventTypeOptions,
   intelligenceEvents,
-  movementSummaries,
-  quarterlyMovementSummary,
   regionOptions,
 } from './data/deliveryHeroIntelligenceData'
 import { sources } from './data/deliveryHeroSources'
@@ -120,7 +117,7 @@ export default function App() {
             <span>核心判断</span>
             <strong>增长质量正在改善，但投资者会继续检验现金流和资本结构</strong>
             <ul className="hero-bullets hero-bullets--dark">
-              <li>Revenue 增速持续快于 GMV 是观察结果，背后需要看 Quick Commerce、订阅、AdTech 和 own-delivery 的实际贡献。</li>
+              <li>Revenue 增速持续快于 GMV，Quick Commerce、订阅、AdTech 和 own-delivery 是主要业务解释。</li>
               <li>MENA、Americas 与 Integrated Verticals 是当前主要增量来源。</li>
               <li>韩国订单和 GMV 恢复、战略复盘、资产出售和债务期限管理决定后续估值弹性。</li>
             </ul>
@@ -145,7 +142,7 @@ export default function App() {
         </SectionCard>
 
         <section className="page-section" id="overview">
-          <SectionHeading number="01" title="核心指标与规模趋势" question="业务组合变化带动收入增速高于 GMV" description="本部分聚焦集团规模、收入转化和增长质量。核心结论是 Delivery Hero 仍在扩张，Revenue 增速高于 GMV 是观察结果，原因要看 Quick Commerce、订阅、AdTech 和 own-delivery 的业务组合变化。" />
+          <SectionHeading number="01" title="核心指标与规模趋势" question="Q1 2026 Revenue 增速高于 GMV 9.0 个百分点，收入转化继续改善" description="Delivery Hero 仍在扩张，Q1 2026 Revenue LfL 增长 17.8%，Group GMV LfL 增长 8.8%；增速差来自 Quick Commerce、订阅、AdTech 和 own-delivery 的业务组合变化。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <SectionCard title="GMV 与 Revenue 季度趋势" subtitle="近 12 个季度 · Reported actual" source="官方公开财报">
@@ -162,7 +159,7 @@ export default function App() {
         </section>
 
         <section className="page-section" id="regions">
-          <SectionHeading number="02" title="增长来源与业务结构" question="MENA 和 Americas 是增量主力，韩国业务恢复仍取决于订单、GMV 和技术整合" description="本部分聚焦区域、品牌和品类结构如何贡献增长。核心结论是增量来自多区域组合，而不是单一市场拉动；韩国业务恢复还要继续看订单、GMV、订阅、own-delivery、商户工具和技术整合效果。" />
+          <SectionHeading number="02" title="增长来源与业务结构" question="MENA 增长 16.1%、Americas 增长 18.1%，韩国业务恢复仍取决于订单、GMV 和技术整合" description="增量来自多区域组合，而不是单一市场拉动；韩国业务恢复取决于订单、GMV、订阅、own-delivery、商户工具和技术整合效果。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <div className="two-column">
@@ -183,7 +180,7 @@ export default function App() {
         </section>
 
         <section className="page-section" id="strategy">
-          <SectionHeading number="03" title="盈利质量与经营杠杆" question="Everyday App 把外卖、Quick Commerce、订阅和广告连接成更高频的收入结构" description="本部分聚焦增长如何转化为经营效率和利润质量。核心结论是 Everyday App 通过多品类入口提高使用频次和跨品类消费，再通过广告、商户服务和履约效率改善收入转化。" />
+          <SectionHeading number="03" title="盈利质量与经营杠杆" question="Keyword Ads 收入同比增长 170%，Everyday App 提高高频场景和收入转化" description="Everyday App 通过多品类入口提高使用频次和跨品类消费，再通过广告、商户服务和履约效率改善收入转化。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <SectionCard title="Quick Commerce 占 Group GMV 比例" subtitle="公司仅明确披露部分同季节点：Q1 2024、Q1 2025、Q1 2026" source="官方公开财报">
@@ -201,7 +198,7 @@ export default function App() {
         </section>
 
         <section className="page-section" id="guidance">
-          <SectionHeading number="04" title="后续观察" question="FY26 EBITDA 和 FCF 仍要看成本控制、现金流管理和资本结构变化" description="本部分聚焦公司指引、券商判断和风险变量。核心结论是盈利方向改善，但现金流、韩国订单和 GMV 恢复、MENA 竞争、资产出售、债务期限和潜在交易仍需持续跟踪。" />
+          <SectionHeading number="04" title="财务预测" question="FY26 Adjusted EBITDA 指引为 €910m–€960m，FCF 指引为大于 €200m" description="公司指引显示盈利和现金流方向改善；现金流、韩国订单和 GMV 恢复、MENA 竞争、资产出售、债务期限和潜在交易会影响改善持续性。" />
           <div className="analysis-layout">
             <div className="data-panel">
               <SectionCard title="盈利与现金流披露趋势" subtitle="半年/全年频率 · 实际值；FY 2023 FCF 未在图中补造" source="官方公开财报">
@@ -217,24 +214,20 @@ export default function App() {
                 {risks.map((risk) => <article key={risk.title} className={`risk-card risk-card--${risk.level === '较高' ? 'high' : risk.level === '中等' ? 'medium' : 'watch'}`}><span>观察变量</span><h3>{risk.title}</h3><p>{risk.text}</p></article>)}
               </div>
             </div>
-            <AnalysisPanel title="后续观察集中在现金流、韩国、MENA 和资本结构" items={profitabilityAnalysis} />
+            <AnalysisPanel title="FY26 财务预测取决于现金流、韩国、MENA 和资本结构" items={profitabilityAnalysis} />
           </div>
           <div className="conclusion"><i>04</i><p><strong>底部总结：</strong>盈利与现金流方向已改善，但 FY26 仍包含重点市场投入；韩国订单和 GMV 恢复、MENA 竞争、监管事项、资产出售、债务期限和潜在交易会决定改善能否持续。</p></div>
         </section>
 
         <section className="page-section" id="intelligence">
-          <SectionHeading number="05" title="情报追踪" question="2026Q1 事件集中在多品类、区域恢复、技术效率和资本结构变化" description="观察期：2026Q1；仅收录官方披露或至少三家可信媒体独立报道的事项。" />
-          <div className="movement-grid">{movementSummaries.map((item) => <MovementSummaryCard key={item.category} {...item} />)}</div>
+          <SectionHeading number="05" title="公开事件时间线" question="2026Q1 公开事件集中在盈利改善、资产出售和债务期限管理" description="观察期：2026Q1；仅收录官方披露或至少三家可信媒体独立报道的事项。" />
           <div className="filters">
             <BrandFilter options={brandOptions} value={brand} onChange={setBrand} />
             <RegionFilter options={regionOptions} value={region} onChange={setRegion} />
             <EventTypeFilter options={eventTypeOptions} value={eventType} onChange={setEventType} />
           </div>
-          <SectionCard title={`本季度情报卡片网格 · ${filteredEvents.length} 条`} subtitle="默认按日期倒序排列，保留日期、分类、标题、事件说明、影响判断和来源链接">
+          <SectionCard title={`本季度公开事件时间线 · ${filteredEvents.length} 条`} subtitle="默认按日期倒序排列，保留日期、分类、标题、事件说明、影响判断和来源链接">
             {filteredEvents.length > 0 ? <Timeline items={filteredEvents} /> : <p className="no-results">当前筛选组合没有可核验事件，请调整筛选条件。</p>}
-          </SectionCard>
-          <SectionCard title="2026Q1 核心事件总结" subtitle="管理层关注事项">
-            <div className="strategy-metrics">{quarterlyMovementSummary.map((item) => <StrategyMetric key={item.category} label={item.category} value="" note={item.text} />)}</div>
           </SectionCard>
         </section>
 
@@ -246,7 +239,7 @@ export default function App() {
           <div className="source-policy"><i>口径</i><p>公司披露用于确认实际数据和指引，UBS 与 J.P. Morgan 用于解释区域差异、投资回报、模型修订和风险；预测值不进入历史实际趋势，reported、constant currency 和 like-for-like 仅在同口径下比较。</p></div>
         </section>
       </main>
-      <footer><span>Delivery Hero财报分析与情报追踪</span><span>情报观察期 2026Q1 · 核验于 2026-06-15</span></footer>
+      <footer><span>Delivery Hero 财报分析与公开事件时间线</span><span>公开事件观察期 2026Q1 · 核验于 2026-06-15</span></footer>
     </div>
   )
 }
