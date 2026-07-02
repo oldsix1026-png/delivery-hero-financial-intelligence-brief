@@ -19,6 +19,14 @@
   --red: #b94f49;
   --red-soft: #fff0ed;
   --purple: #9b4fb3;
+  --burgundy: #8b3f61;
+  --burgundy-soft: #f7eaf0;
+  --brown: #8a5f24;
+  --brown-soft: #f6eddd;
+  --teal: #1f8a83;
+  --teal-soft: #e5f4f2;
+  --slate-red: #8f4f4b;
+  --slate-red-soft: #f2e9e8;
   --shadow: 0 12px 30px rgba(80, 59, 38, 0.07);
 }
 
@@ -138,6 +146,8 @@ main, footer { width: min(1320px, calc(100% - 48px)); margin-inline: auto; }
 .difference-callout p { margin: 0; color: var(--muted); font-size: 12px; }
 .merged-growth-card { display: grid; gap: 12px; }
 .growth-quality-strip { border-top: 1px solid var(--border); padding-top: 8px; }
+.combo-chart-card { border: 1px solid var(--border); border-radius: 16px; background: #fffdf9; padding: 10px 10px 12px; }
+.chart-source { margin: 4px 6px 0; color: var(--muted); font-size: 11px; line-height: 1.55; }
 .everyday-intro { display: grid; gap: 10px; margin-bottom: 14px; }
 .everyday-intro p { margin: 0; color: var(--text); line-height: 1.7; }
 .profit-point-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
@@ -434,6 +444,19 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
   text-orientation: mixed;
 }
 
+.event-card--finance .event-bookmark { background: #c75a22; }
+.event-card--finance .event-meta span { background: var(--orange-soft); color: #a54819; }
+.event-card--capital .event-bookmark { background: #b94f49; }
+.event-card--capital .event-meta span { background: var(--red-soft); color: #9e3c36; }
+.event-card--strategy .event-bookmark { background: var(--brown); }
+.event-card--strategy .event-meta span { background: var(--brown-soft); color: var(--brown); }
+.event-card--asset .event-bookmark { background: var(--burgundy); }
+.event-card--asset .event-meta span { background: var(--burgundy-soft); color: var(--burgundy); }
+.event-card--operations .event-bookmark { background: var(--teal); }
+.event-card--operations .event-meta span { background: var(--teal-soft); color: var(--teal); }
+.event-card--risk .event-bookmark { background: var(--slate-red); }
+.event-card--risk .event-meta span { background: var(--slate-red-soft); color: var(--slate-red); }
+
 .event-card time,
 .timeline__content time {
   display: inline-flex;
@@ -473,6 +496,13 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
 .tag-row .tag:nth-child(n+3) {
   display: none;
 }
+
+.event-card--finance .event-meta span { background: var(--orange-soft); color: #a54819; }
+.event-card--capital .event-meta span { background: var(--red-soft); color: #9e3c36; }
+.event-card--strategy .event-meta span { background: var(--brown-soft); color: var(--brown); }
+.event-card--asset .event-meta span { background: var(--burgundy-soft); color: var(--burgundy); }
+.event-card--operations .event-meta span { background: var(--teal-soft); color: var(--teal); }
+.event-card--risk .event-meta span { background: var(--slate-red-soft); color: var(--slate-red); }
 
 .timeline__content,
 .event-card > div {

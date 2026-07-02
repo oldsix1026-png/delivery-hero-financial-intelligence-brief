@@ -176,9 +176,9 @@ export const quickCommerceDisclosure = [
 ]
 
 export const profitabilityHistory = [
-  { period: 'FY 2023', adjustedEbitda: 253.6, freeCashFlow: null, frequency: '全年' },
-  { period: 'H1 2024', adjustedEbitda: 240.6, freeCashFlow: -104, frequency: '半年' },
-  { period: 'FY 2024', adjustedEbitda: 692.5, freeCashFlow: 99, frequency: '全年' },
-  { period: 'H1 2025', adjustedEbitda: 410.7, freeCashFlow: -8, frequency: '半年' },
-  { period: 'FY 2025', adjustedEbitda: 903, freeCashFlow: 250, frequency: '全年' },
+  { period: 'FY 2023', adjustedEbitda: 253.6, freeCashFlow: null, ebitdaPct: null, groupGmv: null, frequency: '全年' },
+  { period: 'H1 2024', adjustedEbitda: 240.6, freeCashFlow: -104, ebitdaPct: round((240.6 / (11788.9 + 11897.6)) * 100), groupGmv: 11788.9 + 11897.6, frequency: '半年' },
+  { period: 'FY 2024', adjustedEbitda: 692.5, freeCashFlow: 99, ebitdaPct: round((692.5 / (11788.9 + 11897.6 + 12249.3 + 12818.2)) * 100), groupGmv: 11788.9 + 11897.6 + 12249.3 + 12818.2, frequency: '全年' },
+  { period: 'H1 2025', adjustedEbitda: 410.7, freeCashFlow: -8, ebitdaPct: round((410.7 / (12372.5 + 12243.4)) * 100), groupGmv: 12372.5 + 12243.4, frequency: '半年' },
+  { period: 'FY 2025', adjustedEbitda: 903, freeCashFlow: 250, ebitdaPct: round((903 / (12372.5 + 12243.4 + 12179.4 + 12401.5)) * 100), groupGmv: 12372.5 + 12243.4 + 12179.4 + 12401.5, frequency: '全年' },
 ]

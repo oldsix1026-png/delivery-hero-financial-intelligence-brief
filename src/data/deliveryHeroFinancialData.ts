@@ -84,12 +84,12 @@ export const growthAnalysis = [
   {
     label: '数据表现', evidence: '基于研报数据观察' as EvidenceLabel,
     title: '业务组合变化带动收入转化改善',
-    text: '近三年多数季度 Total Segment Revenue 增速高于 GMV，平台从交易规模向收入的转化能力改善；背后原因包括 Quick Commerce、订阅、AdTech 和 own-delivery 的业务组合变化。',
+    text: '近三年多数季度 Total Segment Revenue 增速高于 GMV，平台从交易规模向收入的转化能力改善；佣金、配送服务、广告、订阅和商户服务收入增加，使收入表现不只依赖交易额扩张。',
   },
   {
     label: '业务原因', evidence: '公司披露' as EvidenceLabel,
     title: 'Quick Commerce、订阅和 AdTech 解释收入与 GMV 增速差异',
-    text: '公司将收入与 GMV 增速差归因于 Quick Commerce 扩张、订阅与 AdTech 动能，以及 own-delivery 持续铺开；这些业务会提高订单频次、商户服务收入和平台履约收入。',
+    text: '公司将收入与 GMV 增速差归因于 Quick Commerce 扩张、订阅与 AdTech 动能，以及 own-delivery 持续铺开；这些业务会提高订单频次、商户服务收入、平台履约收入和收入结构质量。',
   },
   {
     label: '增量来源', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
@@ -200,7 +200,7 @@ export const profitabilityAnalysis = [
   {
     label: '公司指引', evidence: '公司披露' as EvidenceLabel,
     title: '盈利与现金流已跨过年度拐点',
-    text: 'FY 2025 Adjusted EBITDA 为 €903m，同比增长 30%；FCF 为 €250m，连续第二年为正。',
+    text: 'FY 2025 Adjusted EBITDA 为 €903m，同比增长 30%；FCF 为 €250m，连续第二年为正。FY26 公司指引继续指向盈利和现金流增长。',
   },
   {
     label: '成本控制', evidence: 'UBS 观点' as EvidenceLabel,
@@ -210,7 +210,7 @@ export const profitabilityAnalysis = [
   {
     label: '成本压力', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
     title: '竞争、营销、技术投入和交易执行影响现金流节奏',
-    text: '市场竞争、营销及技术成本、交易执行和潜在过高支付价格是研报列示风险；汇率与高通胀会计只作为口径解释，reported 与 LfL 必须同口径比较。',
+    text: '市场竞争、营销及技术成本、交易执行和潜在过高支付价格是研报列示风险；韩国业务恢复、MENA 竞争和 Quick Commerce 投资回报会决定现金流改善速度。',
   },
   {
     label: '资本结构观察', evidence: '公司披露' as EvidenceLabel,

@@ -1,10 +1,19 @@
 import type { IntelligenceEvent } from '../data/deliveryHeroIntelligenceData'
 
+const eventTone = (item: IntelligenceEvent) => {
+  if (['年度业绩', '增长指引'].includes(item.eventType)) return 'finance'
+  if (['潜在要约', '资本结构', '债务再融资'].includes(item.eventType)) return 'capital'
+  if (['管理层变化'].includes(item.eventType)) return 'strategy'
+  if (['资产出售', '股东压力'].includes(item.eventType)) return 'asset'
+  if (item.unifiedCategory.includes('业务')) return 'operations'
+  return 'risk'
+}
+
 export default function Timeline({ items }: { items: IntelligenceEvent[] }) {
   return (
     <div className="timeline event-card-flow">
       {items.map((item) => (
-        <article className="event-card" key={item.id}>
+        <article className={`event-card event-card--${eventTone(item)}`} key={item.id}>
           <span className="event-bookmark">{item.eventType}</span>
           <div className="timeline__content">
             <time>{item.eventDate}</time>
