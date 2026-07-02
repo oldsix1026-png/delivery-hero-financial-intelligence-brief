@@ -14,7 +14,6 @@ import RegionalGmvDonutChart from './components/charts/RegionalGmvDonutChart'
 import RegionalGrowthBarChart from './components/charts/RegionalGrowthBarChart'
 import RegionalGrowthTrendChart from './components/charts/RegionalGrowthTrendChart'
 import {
-  growthAnalysis,
   guidance,
   heroKpis,
   keyTermCards,
@@ -107,11 +106,19 @@ export default function App() {
         <section className="hero">
           <div className="hero__copy">
             <span className="eyebrow">2026年上半年 · 管理层财务与情报简报</span>
-            <h1>Delivery Hero 收入转化改善，利润和资本结构进入兑现期</h1>
+            <h1>Delivery Hero 财报与<br />业务情报看板</h1>
             <ul className="hero-bullets">
-              <li><b>Topline：</b>Q1 2026 Group GMV 增长 8.8% LfL，Total Segment Revenue 增长 17.8% LfL；收入增速高于 GMV 9.0 个百分点，说明交易规模向收入的转化继续改善。</li>
-              <li><b>Bottomline：</b>FY26 Adjusted EBITDA 指引为 €910m–€960m，Free Cash Flow 指引大于 €200m；利润改善仍取决于韩国、MENA、Quick Commerce 投入回报和营销补贴节奏。</li>
+              <li><b>Topline：</b>Q1 2026 Group GMV 和 Total Segment Revenue 保持增长，收入增速高于 GMV，MENA、Americas、Integrated Verticals、Quick Commerce、订阅和 AdTech 带来业务组合变化。</li>
+              <li><b>Bottomline：</b>Adjusted EBITDA 和 Free Cash Flow 保持改善，利润表现受韩国业务恢复、营销投入、技术投入、交易执行和 Quick Commerce 投资回报共同影响。</li>
             </ul>
+            <div className="hero-judgment">
+              <h2>本季度核心判断</h2>
+              <ul>
+                <li>收入增速高于 GMV，收入转化改善；Quick Commerce、订阅、AdTech 和 own-delivery 改变收入结构。</li>
+                <li>Adjusted EBITDA 和 Free Cash Flow 保持改善，FY26 公司指引继续指向盈利和现金流增长。</li>
+                <li>成本压力来自竞争、营销、技术投入、交易执行和韩国业务恢复节奏。</li>
+              </ul>
+            </div>
             <div className="hero__meta">
               <span>12 个季度实际值</span><span>公司披露与券商观点分层</span>
               <span>历史实际值与预测值分开</span><span>情报观察期 2026年1–6月</span>
@@ -130,22 +137,19 @@ export default function App() {
           <div className="kpi-grid">
             {heroKpis.map((item) => <StrategyMetric key={item.label} label={item.label} value={item.value} note={`${item.change} · ${item.note}`} />)}
           </div>
-          <div className="analysis-layout">
-            <div className="data-panel">
-              <SectionCard title="Group GMV 与 Total Segment Revenue 同步增长" source="官方公开财报">
-                <div className="merged-growth-card">
-                  <QuarterlyTrendChart />
-                  <div className="growth-quality-strip">
-                    <GrowthQualityChart />
-                  </div>
+          <div className="trend-chart-grid">
+            <SectionCard title="Group GMV 与 Total Segment Revenue 同步增长" source="官方公开财报">
+              <div className="merged-growth-card">
+                <QuarterlyTrendChart />
+                <div className="growth-quality-strip">
+                  <GrowthQualityChart />
                 </div>
-                <div className="difference-callout"><span>Q1 2026 公司披露 LfL 增速差</span><strong>+9.0ppt</strong><p>Revenue 17.8% vs GMV 8.8%</p></div>
-              </SectionCard>
-              <SectionCard title="Adjusted EBITDA、Free Cash Flow 与 EBITDA / GMV" source="官方公开财报">
-                <ProfitabilityTrendChart />
-              </SectionCard>
-            </div>
-            <AnalysisPanel title="收入转化和利润改善来自业务组合与投入回报" items={[growthAnalysis[0], growthAnalysis[1], profitabilityAnalysis[0], profitabilityAnalysis[2]]} />
+              </div>
+              <div className="difference-callout"><span>Q1 2026 公司披露 LfL 增速差</span><strong>+9.0ppt</strong><p>Revenue 17.8% vs GMV 8.8%</p></div>
+            </SectionCard>
+            <SectionCard title="Adjusted EBITDA、Free Cash Flow 与 EBITDA / GMV" source="官方公开财报">
+              <ProfitabilityTrendChart />
+            </SectionCard>
           </div>
         </section>
 

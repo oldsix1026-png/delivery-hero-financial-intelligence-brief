@@ -116,8 +116,8 @@ export const regionalAnalysis = [
   },
   {
     label: '区域进展', evidence: 'UBS 观点' as EvidenceLabel,
-    title: '韩国订单和 LfL GMV 恢复正增长',
-    text: '韩国订单和 LfL GMV 已恢复正增长；市场竞争、补贴、Baemin 订阅、own-delivery、商户工具和全球技术栈整合会影响利润改善速度。',
+    title: '韩国业务订单和 LfL GMV 恢复正增长',
+    text: '韩国业务订单和 LfL GMV 已恢复正增长；市场竞争、补贴、Baemin 订阅、own-delivery、商户工具和全球技术栈整合会影响利润改善速度。',
   },
   {
     label: '成本压力', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
@@ -221,7 +221,7 @@ export const profitabilityAnalysis = [
 
 export const risks = [
   { title: '韩国和 MENA 竞争会改变获客成本与利润改善节奏', level: '较高', text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销、补贴与技术成本超出预期列为主要风险。' },
-  { title: '韩国订单和 GMV 恢复，竞争环境和技术整合影响利润速度', level: '观察中', text: '订单与 GMV 已恢复，市场竞争、补贴、own-delivery、订阅、Quick Commerce、商户工具和全球技术栈整合会影响利润改善速度。' },
+  { title: '韩国业务订单和 GMV 恢复，竞争环境和技术整合影响利润速度', level: '观察中', text: '韩国业务订单与 GMV 已恢复，市场竞争、补贴、own-delivery、订阅、Quick Commerce、商户工具和全球技术栈整合会影响利润改善速度。' },
   { title: '债务期限、资产出售和潜在交易会影响资本结构', level: '较高', text: '台湾 foodpanda 出售审批、再融资后的债务期限、潜在并购或出售交易和资本配置会影响现金流、估值和资本结构。' },
   { title: '监管与骑手事项可能带来额外现金流出', level: '中等', text: '反垄断、骑手法律事项及平台监管可能改变成本结构和区域经营节奏。' },
   { title: '汇率和高通胀会计会放大 reported 与 LfL 差异', level: '中等', text: '阿根廷与土耳其使 reported、constant currency 和 LfL 增速出现明显差异，必须同口径比较。' },
