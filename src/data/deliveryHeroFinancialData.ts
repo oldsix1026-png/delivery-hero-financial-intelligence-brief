@@ -128,7 +128,7 @@ export const regionalAnalysis = [
 
 export const strategyMetrics = [
   { label: '多品类用户 GMV 占比', value: '55%', note: 'Q1 2026 · 公司披露', tone: 'orange' as Tone },
-  { label: '订阅用户 GMV 占比', value: '43%', note: 'Q1 2026 · 公司披露，同比 +11ppt', tone: 'blue' as Tone },
+  { label: '订阅用户 GMV 占比', value: '43%', note: 'Q1 2026 · 公司披露，同比 +11 个百分点', tone: 'blue' as Tone },
   { label: 'Keyword Ads revenue', value: '€52m', note: 'Q1 2026 · 公司披露，同比 +170%', tone: 'green' as Tone },
   { label: '商户广告 ROAS', value: '+7%', note: '新 GenAI 排序模型 · 公司披露', tone: 'red' as Tone },
 ]
@@ -204,12 +204,12 @@ export const profitabilityAnalysis = [
   },
   {
     label: '成本控制', evidence: 'UBS 观点' as EvidenceLabel,
-    title: 'FY26 EBITDA 预测上调来自成本控制和投资回报约束',
+    title: 'FY26 EBITDA 预测上调来自成本控制和投资回报',
     text: 'UBS 将 FY26 Adjusted EBITDA 预测上调至 €950m，MENA 与 Americas 上调抵消 Asia 下调；该数值是券商预测，不是公司实际值。',
   },
   {
     label: '成本压力', evidence: 'J.P. Morgan 观点' as EvidenceLabel,
-    title: '竞争、营销、技术投入和交易执行影响现金流节奏',
+    title: '竞争、营销、技术投入和交易执行影响现金流改善速度',
     text: '市场竞争、营销及技术成本、交易执行和潜在过高支付价格是研报列示风险；韩国业务恢复、MENA 竞争和 Quick Commerce 投资回报会决定现金流改善速度。',
   },
   {
@@ -220,12 +220,12 @@ export const profitabilityAnalysis = [
 ]
 
 export const risks = [
-  { title: '韩国和 MENA 竞争会改变获客成本与利润改善节奏', level: '较高', text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销、补贴与技术成本超出预期列为主要风险。' },
+  { title: '韩国和 MENA 竞争会改变获客成本与利润改善速度', level: '较高', text: 'J.P. Morgan 将韩国和 MENA 市占率竞争、营销、补贴与技术成本超出预期列为主要风险。' },
   { title: '韩国业务订单和 GMV 恢复，竞争环境和技术整合影响利润速度', level: '观察中', text: '韩国业务订单与 GMV 已恢复，市场竞争、补贴、own-delivery、订阅、Quick Commerce、商户工具和全球技术栈整合会影响利润改善速度。' },
   { title: '债务期限、资产出售和潜在交易会影响资本结构', level: '较高', text: '台湾 foodpanda 出售审批、再融资后的债务期限、潜在并购或出售交易和资本配置会影响现金流、估值和资本结构。' },
-  { title: '监管与骑手事项可能带来额外现金流出', level: '中等', text: '反垄断、骑手法律事项及平台监管可能改变成本结构和区域经营节奏。' },
+  { title: '监管与骑手事项可能带来额外现金流出', level: '中等', text: '反垄断、骑手法律事项及平台监管可能改变成本结构和区域经营安排。' },
   { title: '汇率和高通胀会计会放大 reported 与 LfL 差异', level: '中等', text: '阿根廷与土耳其使 reported、constant currency 和 LfL 增速出现明显差异，必须同口径比较。' },
-  { title: 'CEO 交接需要和战略复盘进度一起观察', level: '观察中', text: '管理层交接、董事会变化和战略复盘并行，可能影响资本配置和执行节奏。' },
+  { title: 'CEO 交接需要和战略复盘进度一起观察', level: '观察中', text: '管理层交接、董事会变化和战略复盘并行，可能影响资本配置和执行速度。' },
 ]
 
 export const latestActuals = {

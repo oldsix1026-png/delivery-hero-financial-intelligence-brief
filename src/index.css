@@ -106,6 +106,10 @@ main, footer { width: min(1320px, calc(100% - 48px)); margin-inline: auto; }
 .analysis-layout { display: grid; grid-template-columns: minmax(0,1.58fr) minmax(330px,.72fr); gap: 20px; align-items: start; }
 .data-panel { display: grid; min-width: 0; gap: 18px; }
 .trend-chart-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; align-items: start; margin-top: 20px; }
+.trend-right-column { display: grid; min-width: 0; gap: 16px; align-items: start; }
+.kpi-grid--compact { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-top: 0; }
+.kpi-grid--compact .compact-metric { min-height: 132px; padding: 16px; }
+.kpi-grid--compact .compact-metric strong { font-size: 23px; }
 .two-column { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
 .analysis-panel { position: sticky; top: 92px; overflow: hidden; }
 .analysis-panel > header { padding: 25px; background: #312b26; color: #fff; }
@@ -292,6 +296,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
   .hero__copy, .hero__signal { padding: 32px; }
   .analysis-layout { grid-template-columns: 1fr; }
   .trend-chart-grid { grid-template-columns: 1fr; }
+  .kpi-grid--compact { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .analysis-panel { position: static; }
   .two-column { grid-template-columns: 1fr; }
   .movement-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
@@ -302,7 +307,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
 }
 
 @media (max-width: 580px) {
-  .kpi-grid, .term-grid, .movement-grid, .strategy-metrics, .filters, .risk-matrix, .source-grid, .guidance-summary, .profit-point-grid { grid-template-columns: 1fr; }
+  .kpi-grid, .kpi-grid--compact, .term-grid, .movement-grid, .strategy-metrics, .filters, .risk-matrix, .source-grid, .guidance-summary, .profit-point-grid { grid-template-columns: 1fr; }
   .filter-group { grid-column: auto; }
   .page-section { padding-top: 72px; }
   .hero h1 { font-size: 38px; }

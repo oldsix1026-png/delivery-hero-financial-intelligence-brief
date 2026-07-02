@@ -175,7 +175,7 @@ export const intelligenceEvents: IntelligenceEvent[] = [
     isMediaVerified: false,
     hasOfficialAndMediaCoverage: false,
     includedReason: '官方 Q1 Trading Update 披露核心经营和指引数据',
-    sourceNotes: '收入与 GMV 增速差为 17.8% - 8.8% = 9.0ppt。',
+    sourceNotes: '收入与 GMV 增速差为 17.8% - 8.8% = 9.0 个百分点。',
   }),
   event({
     id: 'dh-aspex-pressure-20260313',

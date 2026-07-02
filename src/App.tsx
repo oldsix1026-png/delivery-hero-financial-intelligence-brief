@@ -116,7 +116,7 @@ export default function App() {
               <ul>
                 <li>收入增速高于 GMV，收入转化改善；Quick Commerce、订阅、AdTech 和 own-delivery 改变收入结构。</li>
                 <li>Adjusted EBITDA 和 Free Cash Flow 保持改善，FY26 公司指引继续指向盈利和现金流增长。</li>
-                <li>成本压力来自竞争、营销、技术投入、交易执行和韩国业务恢复节奏。</li>
+                <li>成本压力来自竞争、营销、技术投入、交易执行和韩国业务恢复进度。</li>
               </ul>
             </div>
             <div className="hero__meta">
@@ -134,9 +134,6 @@ export default function App() {
 
         <section className="page-section page-section--nested" id="trend">
           <SectionHeading number="" title="趋势总览" question="Q1 2026 收入增速高于 GMV 9.0 个百分点，利润和现金流保持改善" description="" />
-          <div className="kpi-grid">
-            {heroKpis.map((item) => <StrategyMetric key={item.label} label={item.label} value={item.value} note={`${item.change} · ${item.note}`} />)}
-          </div>
           <div className="trend-chart-grid">
             <SectionCard title="Group GMV 与 Total Segment Revenue 同步增长" source="官方公开财报">
               <div className="merged-growth-card">
@@ -145,11 +142,16 @@ export default function App() {
                   <GrowthQualityChart />
                 </div>
               </div>
-              <div className="difference-callout"><span>Q1 2026 公司披露 LfL 增速差</span><strong>+9.0ppt</strong><p>Revenue 17.8% vs GMV 8.8%</p></div>
+              <div className="difference-callout"><span>Q1 2026 公司披露 LfL 增速差</span><strong>+9.0 个百分点</strong><p>Revenue 17.8% vs GMV 8.8%</p></div>
             </SectionCard>
-            <SectionCard title="Adjusted EBITDA、Free Cash Flow 与 EBITDA / GMV" source="官方公开财报">
-              <ProfitabilityTrendChart />
-            </SectionCard>
+            <div className="trend-right-column">
+              <SectionCard title="Adjusted EBITDA、Free Cash Flow 与 EBITDA / GMV" source="官方公开财报">
+                <ProfitabilityTrendChart />
+              </SectionCard>
+              <div className="kpi-grid kpi-grid--compact">
+                {heroKpis.map((item) => <StrategyMetric key={item.label} label={item.label} value={item.value} note={`${item.change} · ${item.note}`} />)}
+              </div>
+            </div>
           </div>
         </section>
 
@@ -181,7 +183,7 @@ export default function App() {
                 </div>
               </SectionCard>
             </div>
-            <AnalysisPanel title="区域和品类组合解释增量来源" items={regionalAnalysis} />
+            <AnalysisPanel title="MENA 与品类组合拉动 GMV，订阅和 AdTech 抬升收入转化" items={regionalAnalysis} />
           </div>
         </section>
 
@@ -206,12 +208,12 @@ export default function App() {
                 {risks.map((risk) => <article key={risk.title} className={`risk-card risk-card--${risk.level === '较高' ? 'high' : risk.level === '中等' ? 'medium' : 'watch'}`}><span>关键变量</span><h3>{risk.title}</h3><p>{risk.text}</p></article>)}
               </div>
             </div>
-            <AnalysisPanel title="盈利质量改善来自 EBITDA、FCF 和投资回报约束" items={profitabilityAnalysis} />
+            <AnalysisPanel title="盈利质量改善来自 EBITDA、FCF 和投资回报" items={profitabilityAnalysis} />
           </div>
         </section>
 
         <section className="page-section" id="intelligence">
-          <SectionHeading number="" title="二、竞品动态追踪" question="2026年上半年事件集中在业务恢复、资产出售、股权结构和治理调整" description="" />
+          <SectionHeading number="" title="二、竞品动态追踪" question="2026年上半年事件集中在韩国业务恢复、资产出售、股权结构和治理调整" description="" />
           <div className="filters">
             <BrandFilter options={brandOptions} value={brand} onChange={setBrand} />
             <RegionFilter options={regionOptions} value={region} onChange={setRegion} />
