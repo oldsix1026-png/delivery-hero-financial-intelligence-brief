@@ -8,5 +8,5 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-node preview-server.mjs
+node server.cjs
 pause

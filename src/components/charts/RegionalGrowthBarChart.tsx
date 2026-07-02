@@ -11,7 +11,7 @@ export default function RegionalGrowthBarChart() {
         <Tooltip formatter={(value, name) => [`${value}%`, name]} />
         <Legend />
         <Bar dataKey="reportedGrowth" name="Reported YoY" fill="#c7b7a8" radius={[0, 6, 6, 0]} barSize={11} />
-        <Bar dataKey="lflGrowth" name="LfL YoY" fill="#f47a32" radius={[0, 6, 6, 0]} barSize={11} />
+        <Bar dataKey="lflGrowth" name="LfL YoY" fill="#9b4fb3" radius={[0, 6, 6, 0]} barSize={11} />
       </BarChart>
     </ResponsiveContainer>
   )

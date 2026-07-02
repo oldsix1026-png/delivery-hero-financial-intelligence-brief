@@ -11,8 +11,8 @@ export default function QuarterlyTrendChart() {
         <YAxis yAxisId="revenue" orientation="right" domain={[2, 4.2]} unit="bn" tickLine={false} axisLine={false} />
         <Tooltip formatter={(value, name) => [`€${Number(value).toFixed(2)}bn`, name]} />
         <Legend />
-        <Line yAxisId="gmv" type="monotone" dataKey="gmv" name="Group GMV" stroke="#f47a32" strokeWidth={3} dot={{ r: 3 }} />
-        <Line yAxisId="revenue" type="monotone" dataKey="revenue" name="Total Segment Revenue" stroke="#3b82a0" strokeWidth={3} dot={{ r: 3 }} />
+        <Line yAxisId="gmv" type="monotone" dataKey="gmv" name="Group GMV 实际值" stroke="#00966b" strokeWidth={3} dot={{ r: 3 }} />
+        <Line yAxisId="revenue" type="monotone" dataKey="revenue" name="Total Segment Revenue 实际值" stroke="#f05a24" strokeWidth={3} dot={{ r: 3 }} />
       </LineChart>
     </ResponsiveContainer>
   )

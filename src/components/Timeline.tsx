@@ -5,6 +5,7 @@ export default function Timeline({ items }: { items: IntelligenceEvent[] }) {
     <div className="timeline event-card-flow">
       {items.map((item) => (
         <article className="event-card" key={item.id}>
+          <span className="event-bookmark">{item.eventType}</span>
           <div className="timeline__content">
             <time>{item.eventDate}</time>
             <div className="event-meta">

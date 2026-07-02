@@ -10,8 +10,8 @@ export default function ProfitabilityTrendChart() {
         <YAxis unit="m" tickLine={false} axisLine={false} />
         <Tooltip formatter={(value, name) => [value === null ? '未披露' : `€${value}m`, name]} />
         <Legend />
-        <Bar dataKey="adjustedEbitda" name="Adjusted EBITDA" fill="#3b82a0" radius={[6, 6, 0, 0]} />
-        <Line type="monotone" dataKey="freeCashFlow" name="Free Cash Flow" stroke="#27846b" strokeWidth={3} connectNulls={false} />
+        <Bar dataKey="adjustedEbitda" name="Adjusted EBITDA 实际值" fill="#00966b" radius={[6, 6, 0, 0]} />
+        <Line type="monotone" dataKey="freeCashFlow" name="Free Cash Flow 实际值" stroke="#9b4fb3" strokeWidth={3} connectNulls={false} />
       </ComposedChart>
     </ResponsiveContainer>
   )

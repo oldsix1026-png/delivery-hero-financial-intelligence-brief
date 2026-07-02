@@ -11,8 +11,8 @@ export default function GrowthQualityChart() {
         <YAxis unit="%" tickLine={false} axisLine={false} />
         <Tooltip formatter={(value, name) => [`${value}%`, name]} />
         <Legend />
-        <Bar dataKey="gmvYoY" name="GMV reported YoY" fill="#f47a32" radius={[5, 5, 0, 0]} />
-        <Bar dataKey="revenueYoY" name="Revenue reported YoY" fill="#3b82a0" radius={[5, 5, 0, 0]} />
+        <Bar dataKey="gmvYoY" name="GMV reported YoY" fill="#9b4fb3" radius={[5, 5, 0, 0]} />
+        <Bar dataKey="revenueYoY" name="Revenue reported YoY" fill="#f05a24" radius={[5, 5, 0, 0]} />
       </BarChart>
     </ResponsiveContainer>
   )

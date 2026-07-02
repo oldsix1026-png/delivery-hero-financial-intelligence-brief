@@ -1,12 +1,13 @@
 Delivery Hero 看板本地预览包
 
 请不要直接双击 index.html。
+React / Vite 项目直接用 file:// 打开可能白屏。
 
 打开方式：
 1. 解压 delivery_hero_dashboard_local_preview.zip。
 2. 进入解压后的 delivery_hero_dashboard_local_preview 文件夹。
 3. 双击 start_preview.bat。
-4. 脚本会启动本地静态服务，并自动打开浏览器。
+4. 浏览器打开 http://127.0.0.1:4175/ 或脚本中显示的地址。
 
 说明：
 - 直接双击 index.html 可能因为 file:// 路径导致白屏。

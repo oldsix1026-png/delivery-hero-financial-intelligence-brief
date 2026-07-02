@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
 const links = [
-  ['overview', '财报概览'],
-  ['regions', '区域结构'],
-  ['strategy', '战略引擎'],
-  ['guidance', '利润与预测'],
-  ['intelligence', '公开事件'],
+  ['financial', '财报分析'],
+  ['trend', '趋势总览'],
+  ['topline', 'Topline'],
+  ['bottomline', 'Bottomline'],
+  ['intelligence', '动态追踪'],
   ['sources', '信息来源'],
 ]
 
